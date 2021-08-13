@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1 (Python 3.9.0 on darwin)" generated="20210813 23:48:16.186" rpa="false" schemaversion="2">
+<suite id="s1" name="ConnectWallet" source="/Users/metoinside/Documents/qntism/monox-automation/initialAutomation/TestSuites/ConnectWallet.robot">
+<test id="s1-t1" name="This is sample test case">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://dev.monox.finance</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210813 23:48:16.313" level="INFO">Opening browser 'Chrome' to base url 'https://dev.monox.finance'.</msg>
+<status status="PASS" starttime="20210813 23:48:16.313" endtime="20210813 23:48:29.634"/>
+</kw>
+<kw name="Page Should Contain Button" library="SeleniumLibrary">
+<arg>Connect Wallet</arg>
+<doc>Verifies button ``locator`` is found from current page.</doc>
+<msg timestamp="20210813 23:48:31.919" level="INFO">Current page contains button 'Connect Wallet'.</msg>
+<status status="PASS" starttime="20210813 23:48:29.635" endtime="20210813 23:48:31.919"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>Connect Wallet</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20210813 23:48:31.919" level="INFO">Clicking button 'Connect Wallet'.</msg>
+<status status="PASS" starttime="20210813 23:48:31.919" endtime="20210813 23:48:35.935"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210813 23:48:36.936" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210813 23:48:35.935" endtime="20210813 23:48:36.937"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Test Wallet</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20210813 23:48:36.964" level="INFO">Current page contains text 'Test Wallet'.</msg>
+<status status="PASS" starttime="20210813 23:48:36.937" endtime="20210813 23:48:36.964"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="root"]/div[2]/div[2]/div/div[5]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210813 23:48:36.965" level="INFO">Clicking element 'xpath://*[@id="root"]/div[2]/div[2]/div/div[5]'.</msg>
+<status status="PASS" starttime="20210813 23:48:36.965" endtime="20210813 23:48:38.191"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="root"]/div[2]/div[2]/div/div[2]/input</arg>
+<arg>234ca1ad1035915bf5985f429e3022e89634792717ee1131e684f2c805de9b6b</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210813 23:48:38.191" level="INFO">Typing text '234ca1ad1035915bf5985f429e3022e89634792717ee1131e684f2c805de9b6b' into text field 'xpath://*[@id="root"]/div[2]/div[2]/div/div[2]/input'.</msg>
+<status status="PASS" starttime="20210813 23:48:38.191" endtime="20210813 23:48:39.117"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Connect</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20210813 23:48:39.129" level="INFO">Current page contains text 'Connect'.</msg>
+<status status="PASS" starttime="20210813 23:48:39.117" endtime="20210813 23:48:39.129"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="root"]/div[2]/div[2]/div/div[5]/div[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210813 23:48:39.129" level="INFO">Clicking element 'xpath://*[@id="root"]/div[2]/div[2]/div/div[5]/div[1]'.</msg>
+<status status="PASS" starttime="20210813 23:48:39.129" endtime="20210813 23:48:39.562"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210813 23:48:40.563" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210813 23:48:39.562" endtime="20210813 23:48:40.564"/>
+</kw>
+<kw name="Take Screenshot" library="Screenshot">
+<doc>Takes a screenshot in JPEG format and embeds it into the log file.</doc>
+<msg timestamp="20210813 23:48:40.712" level="INFO" html="true">&lt;a href="screenshot_1.jpg"&gt;&lt;img src="screenshot_1.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210813 23:48:40.564" endtime="20210813 23:48:40.713"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210813 23:48:40.713" endtime="20210813 23:48:40.777"/>
+</kw>
+<status status="PASS" starttime="20210813 23:48:16.312" endtime="20210813 23:48:40.777"/>
+</test>
+<status status="PASS" starttime="20210813 23:48:16.187" endtime="20210813 23:48:40.778"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="ConnectWallet">ConnectWallet</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
