@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1 (Python 3.9.0 on darwin)" generated="20210831 20:01:50.100" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1 (Python 3.9.0 on darwin)" generated="20210831 20:19:30.592" rpa="false" schemaversion="2">
 <suite id="s1" name="Swap" source="/Users/metoinside/Documents/qntism/monox-automation/initialAutomation/TestSuites/Swap/Swap.robot">
 <test id="s1-t1" name="KOVAN - Swapping ETH-VCASH">
 <kw name="Connect MetaMask Wallet" library="CommonFunctionalities" type="SETUP">
@@ -9,252 +9,252 @@
 <arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
 <arg>sys, selenium.webdriver</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20210831 20:01:50.299" level="INFO">${ChromeOptions} = &lt;selenium.webdriver.chrome.options.Options object at 0x10efb0c40&gt;</msg>
-<status status="PASS" starttime="20210831 20:01:50.298" endtime="20210831 20:01:50.300"/>
+<msg timestamp="20210831 20:19:30.778" level="INFO">${ChromeOptions} = &lt;selenium.webdriver.chrome.options.Options object at 0x10b308970&gt;</msg>
+<status status="PASS" starttime="20210831 20:19:30.777" endtime="20210831 20:19:30.778"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${ChromeOptions}</arg>
 <arg>add_extension</arg>
 <arg>/Users/metoinside/Documents/qntism/monox-automation/initialAutomation/Resources/Plugins/MetaMask_v10.0.3.crx</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20210831 20:01:50.301" endtime="20210831 20:01:50.301"/>
+<status status="PASS" starttime="20210831 20:19:30.778" endtime="20210831 20:19:30.778"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <var>${Options}</var>
 <arg>${ChromeOptions}</arg>
 <arg>to_capabilities</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<msg timestamp="20210831 20:01:50.425" level="INFO">${Options} = {'browserName': 'chrome', 'version': '', 'platform': 'ANY', 'goog:chromeOptions': {'extensions': ['Q3IyNAMAAAAdBQAAEqwECqYCMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAj/u/XDdjlDyw7gHEtaaasZ9GdG8WOKAyJ...</msg>
-<status status="PASS" starttime="20210831 20:01:50.301" endtime="20210831 20:01:50.425"/>
+<msg timestamp="20210831 20:19:30.926" level="INFO">${Options} = {'browserName': 'chrome', 'version': '', 'platform': 'ANY', 'goog:chromeOptions': {'extensions': ['Q3IyNAMAAAAdBQAAEqwECqYCMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAj/u/XDdjlDyw7gHEtaaasZ9GdG8WOKAyJ...</msg>
+<status status="PASS" starttime="20210831 20:19:30.778" endtime="20210831 20:19:30.926"/>
 </kw>
 <kw name="Create Webdriver" library="SeleniumLibrary">
 <arg>Chrome</arg>
 <arg>desired_capabilities=${Options}</arg>
 <doc>Creates an instance of Selenium WebDriver.</doc>
-<msg timestamp="20210831 20:01:50.426" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
-<status status="PASS" starttime="20210831 20:01:50.425" endtime="20210831 20:01:59.236"/>
+<msg timestamp="20210831 20:19:30.927" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20210831 20:19:30.926" endtime="20210831 20:19:40.530"/>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>https://dev.monox.finance</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20210831 20:01:59.238" level="INFO">Opening url 'https://dev.monox.finance'</msg>
-<status status="PASS" starttime="20210831 20:01:59.237" endtime="20210831 20:02:17.894"/>
+<msg timestamp="20210831 20:19:40.531" level="INFO">Opening url 'https://dev.monox.finance'</msg>
+<status status="PASS" starttime="20210831 20:19:40.531" endtime="20210831 20:20:03.918"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20210831 20:02:17.894" endtime="20210831 20:02:18.237"/>
+<status status="PASS" starttime="20210831 20:20:03.918" endtime="20210831 20:20:04.135"/>
 </kw>
-<status status="PASS" starttime="20210831 20:01:50.293" endtime="20210831 20:02:18.238"/>
+<status status="PASS" starttime="20210831 20:19:30.777" endtime="20210831 20:20:04.135"/>
 </kw>
 <kw name="Import MetaMask Wallet" library="CommonFunctionalities">
 <kw name="Switch Window" library="SeleniumLibrary">
 <arg>MetaMask</arg>
 <doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" starttime="20210831 20:02:18.240" endtime="20210831 20:02:18.318"/>
+<status status="PASS" starttime="20210831 20:20:04.136" endtime="20210831 20:20:04.523"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210831 20:02:20.322" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20210831 20:02:18.319" endtime="20210831 20:02:20.323"/>
+<msg timestamp="20210831 20:20:06.528" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210831 20:20:04.525" endtime="20210831 20:20:06.528"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="app-content"]/div/div[3]/div/div/div/button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:02:20.329" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/div/div/button'.</msg>
-<status status="PASS" starttime="20210831 20:02:20.325" endtime="20210831 20:02:22.677"/>
+<msg timestamp="20210831 20:20:06.531" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/div/div/button'.</msg>
+<status status="PASS" starttime="20210831 20:20:06.528" endtime="20210831 20:20:08.978"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210831 20:02:23.679" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20210831 20:02:22.677" endtime="20210831 20:02:23.680"/>
+<msg timestamp="20210831 20:20:09.980" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210831 20:20:08.979" endtime="20210831 20:20:09.980"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="app-content"]/div/div[3]/div/div/div[2]/div/div[2]/div[1]/button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:02:23.681" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/div/div[2]/div/div[2]/div[1]/button'.</msg>
-<status status="PASS" starttime="20210831 20:02:23.680" endtime="20210831 20:02:24.067"/>
+<msg timestamp="20210831 20:20:09.981" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/div/div[2]/div/div[2]/div[1]/button'.</msg>
+<status status="PASS" starttime="20210831 20:20:09.981" endtime="20210831 20:20:10.751"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210831 20:02:25.070" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20210831 20:02:24.068" endtime="20210831 20:02:25.070"/>
+<msg timestamp="20210831 20:20:11.797" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210831 20:20:10.780" endtime="20210831 20:20:11.797"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="app-content"]/div/div[3]/div/div/div/div[5]/div[1]/footer/button[2]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:02:25.071" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/div/div/div[5]/div[1]/footer/button[2]'.</msg>
-<status status="PASS" starttime="20210831 20:02:25.071" endtime="20210831 20:02:25.419"/>
+<msg timestamp="20210831 20:20:11.798" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/div/div/div[5]/div[1]/footer/button[2]'.</msg>
+<status status="PASS" starttime="20210831 20:20:11.798" endtime="20210831 20:20:12.203"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210831 20:02:26.421" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20210831 20:02:25.419" endtime="20210831 20:02:26.421"/>
+<msg timestamp="20210831 20:20:13.206" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210831 20:20:12.204" endtime="20210831 20:20:13.206"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//*[@id="app-content"]/div/div[3]/div/div/form/div[4]/div[1]/div/input</arg>
 <arg>month foam ostrich boil negative border absorb swap metal tooth wise coconut</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210831 20:02:26.422" level="INFO">Typing text 'month foam ostrich boil negative border absorb swap metal tooth wise coconut' into text field '//*[@id="app-content"]/div/div[3]/div/div/form/div[4]/div[1]/div/input'.</msg>
-<status status="PASS" starttime="20210831 20:02:26.422" endtime="20210831 20:02:29.001"/>
+<msg timestamp="20210831 20:20:13.207" level="INFO">Typing text 'month foam ostrich boil negative border absorb swap metal tooth wise coconut' into text field '//*[@id="app-content"]/div/div[3]/div/div/form/div[4]/div[1]/div/input'.</msg>
+<status status="PASS" starttime="20210831 20:20:13.207" endtime="20210831 20:20:17.321"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210831 20:02:30.005" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20210831 20:02:29.002" endtime="20210831 20:02:30.005"/>
+<msg timestamp="20210831 20:20:18.322" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210831 20:20:17.321" endtime="20210831 20:20:18.322"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//*[@id="password"]</arg>
 <arg>Asdf1234</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210831 20:02:30.007" level="INFO">Typing text 'Asdf1234' into text field '//*[@id="password"]'.</msg>
-<status status="PASS" starttime="20210831 20:02:30.006" endtime="20210831 20:02:31.044"/>
+<msg timestamp="20210831 20:20:18.324" level="INFO">Typing text 'Asdf1234' into text field '//*[@id="password"]'.</msg>
+<status status="PASS" starttime="20210831 20:20:18.323" endtime="20210831 20:20:19.463"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//*[@id="confirm-password"]</arg>
 <arg>Asdf1234</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210831 20:02:31.045" level="INFO">Typing text 'Asdf1234' into text field '//*[@id="confirm-password"]'.</msg>
-<status status="PASS" starttime="20210831 20:02:31.044" endtime="20210831 20:02:31.134"/>
+<msg timestamp="20210831 20:20:19.463" level="INFO">Typing text 'Asdf1234' into text field '//*[@id="confirm-password"]'.</msg>
+<status status="PASS" starttime="20210831 20:20:19.463" endtime="20210831 20:20:19.589"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="app-content"]/div/div[3]/div/div/form/div[7]/div</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:02:31.134" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/div/form/div[7]/div'.</msg>
-<status status="PASS" starttime="20210831 20:02:31.134" endtime="20210831 20:02:32.137"/>
+<msg timestamp="20210831 20:20:19.589" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/div/form/div[7]/div'.</msg>
+<status status="PASS" starttime="20210831 20:20:19.589" endtime="20210831 20:20:21.807"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210831 20:02:33.138" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20210831 20:02:32.137" endtime="20210831 20:02:33.138"/>
+<msg timestamp="20210831 20:20:22.808" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210831 20:20:21.807" endtime="20210831 20:20:22.809"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="app-content"]/div/div[3]/div/div/form/button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:02:33.141" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/div/form/button'.</msg>
-<status status="PASS" starttime="20210831 20:02:33.139" endtime="20210831 20:02:33.485"/>
+<msg timestamp="20210831 20:20:22.819" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/div/form/button'.</msg>
+<status status="PASS" starttime="20210831 20:20:22.810" endtime="20210831 20:20:23.391"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210831 20:02:34.487" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20210831 20:02:33.486" endtime="20210831 20:02:34.487"/>
+<msg timestamp="20210831 20:20:24.401" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210831 20:20:23.392" endtime="20210831 20:20:24.401"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//*[@id="app-content"]/div/div[3]/div/div/button</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210831 20:02:34.487" endtime="20210831 20:02:35.752"/>
+<status status="PASS" starttime="20210831 20:20:24.405" endtime="20210831 20:20:27.803"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>//*[@id="app-content"]/div/div[3]/div/div/button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20210831 20:02:35.752" level="INFO">Clicking button '//*[@id="app-content"]/div/div[3]/div/div/button'.</msg>
-<status status="PASS" starttime="20210831 20:02:35.752" endtime="20210831 20:02:35.937"/>
+<msg timestamp="20210831 20:20:27.804" level="INFO">Clicking button '//*[@id="app-content"]/div/div[3]/div/div/button'.</msg>
+<status status="PASS" starttime="20210831 20:20:27.804" endtime="20210831 20:20:28.079"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="popover-content"]/div/div/section/header/div/button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:02:35.937" level="INFO">Clicking element '//*[@id="popover-content"]/div/div/section/header/div/button'.</msg>
-<status status="PASS" starttime="20210831 20:02:35.937" endtime="20210831 20:02:37.698"/>
+<msg timestamp="20210831 20:20:28.080" level="INFO">Clicking element '//*[@id="popover-content"]/div/div/section/header/div/button'.</msg>
+<status status="PASS" starttime="20210831 20:20:28.079" endtime="20210831 20:20:30.737"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210831 20:02:38.700" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20210831 20:02:37.698" endtime="20210831 20:02:38.700"/>
+<msg timestamp="20210831 20:20:31.738" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210831 20:20:30.737" endtime="20210831 20:20:31.738"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="app-content"]/div/div[1]/div/div[2]/div[1]/div</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:02:38.702" level="INFO">Clicking element '//*[@id="app-content"]/div/div[1]/div/div[2]/div[1]/div'.</msg>
-<status status="PASS" starttime="20210831 20:02:38.701" endtime="20210831 20:02:39.030"/>
+<msg timestamp="20210831 20:20:31.741" level="INFO">Clicking element '//*[@id="app-content"]/div/div[1]/div/div[2]/div[1]/div'.</msg>
+<status status="PASS" starttime="20210831 20:20:31.740" endtime="20210831 20:20:32.187"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="app-content"]/div/div[3]/div/li[3]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:02:39.030" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/li[3]'.</msg>
-<status status="PASS" starttime="20210831 20:02:39.030" endtime="20210831 20:02:39.223"/>
+<msg timestamp="20210831 20:20:32.188" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/li[3]'.</msg>
+<status status="PASS" starttime="20210831 20:20:32.187" endtime="20210831 20:20:32.549"/>
 </kw>
-<status status="PASS" starttime="20210831 20:02:18.239" endtime="20210831 20:02:39.223"/>
+<status status="PASS" starttime="20210831 20:20:04.135" endtime="20210831 20:20:32.550"/>
 </kw>
 <kw name="Complete Integration" library="CommonFunctionalities">
 <kw name="Switch Window" library="SeleniumLibrary">
 <arg>Home Page | MonoX</arg>
 <doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" starttime="20210831 20:02:39.223" endtime="20210831 20:02:41.130"/>
+<status status="PASS" starttime="20210831 20:20:32.551" endtime="20210831 20:20:35.115"/>
 </kw>
 <kw name="Page Should Contain Button" library="SeleniumLibrary">
 <arg>Connect Wallet</arg>
 <doc>Verifies button ``locator`` is found from current page.</doc>
-<msg timestamp="20210831 20:02:41.597" level="INFO">Current page contains button 'Connect Wallet'.</msg>
-<status status="PASS" starttime="20210831 20:02:41.130" endtime="20210831 20:02:41.597"/>
+<msg timestamp="20210831 20:20:35.285" level="INFO">Current page contains button 'Connect Wallet'.</msg>
+<status status="PASS" starttime="20210831 20:20:35.115" endtime="20210831 20:20:35.285"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>Connect Wallet</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20210831 20:02:41.598" level="INFO">Clicking button 'Connect Wallet'.</msg>
-<status status="PASS" starttime="20210831 20:02:41.597" endtime="20210831 20:02:43.890"/>
+<msg timestamp="20210831 20:20:35.286" level="INFO">Clicking button 'Connect Wallet'.</msg>
+<status status="PASS" starttime="20210831 20:20:35.285" endtime="20210831 20:20:37.522"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210831 20:02:44.891" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20210831 20:02:43.891" endtime="20210831 20:02:44.891"/>
+<msg timestamp="20210831 20:20:38.525" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210831 20:20:37.522" endtime="20210831 20:20:38.525"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Connect MetaMask Wallet</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20210831 20:02:44.930" level="INFO">Current page contains text 'Connect MetaMask Wallet'.</msg>
-<status status="PASS" starttime="20210831 20:02:44.892" endtime="20210831 20:02:44.930"/>
+<msg timestamp="20210831 20:20:38.566" level="INFO">Current page contains text 'Connect MetaMask Wallet'.</msg>
+<status status="PASS" starttime="20210831 20:20:38.525" endtime="20210831 20:20:38.566"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="root"]/div[2]/div[2]/div/div[2]/div</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:02:44.931" level="INFO">Clicking element '//*[@id="root"]/div[2]/div[2]/div/div[2]/div'.</msg>
-<status status="PASS" starttime="20210831 20:02:44.931" endtime="20210831 20:02:46.556"/>
+<msg timestamp="20210831 20:20:38.567" level="INFO">Clicking element '//*[@id="root"]/div[2]/div[2]/div/div[2]/div'.</msg>
+<status status="PASS" starttime="20210831 20:20:38.566" endtime="20210831 20:20:40.314"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210831 20:02:49.557" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20210831 20:02:46.556" endtime="20210831 20:02:49.557"/>
+<msg timestamp="20210831 20:20:43.315" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210831 20:20:40.314" endtime="20210831 20:20:43.315"/>
 </kw>
 <kw name="Switch Window" library="SeleniumLibrary">
 <arg>MetaMask Notification</arg>
 <doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" starttime="20210831 20:02:49.557" endtime="20210831 20:02:49.761"/>
+<status status="PASS" starttime="20210831 20:20:43.316" endtime="20210831 20:20:43.509"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="app-content"]/div/div[3]/div/div[2]/div[4]/div[2]/button[2]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:02:49.762" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/div[2]/div[4]/div[2]/button[2]'.</msg>
-<status status="PASS" starttime="20210831 20:02:49.761" endtime="20210831 20:02:49.853"/>
+<msg timestamp="20210831 20:20:43.510" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/div[2]/div[4]/div[2]/button[2]'.</msg>
+<status status="PASS" starttime="20210831 20:20:43.509" endtime="20210831 20:20:43.614"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="app-content"]/div/div[3]/div/div[2]/div[2]/div[2]/footer/button[2]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:02:49.853" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/div[2]/div[2]/div[2]/footer/button[2]'.</msg>
-<status status="PASS" starttime="20210831 20:02:49.853" endtime="20210831 20:02:50.011"/>
+<msg timestamp="20210831 20:20:43.614" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/div[2]/div[2]/div[2]/footer/button[2]'.</msg>
+<status status="PASS" starttime="20210831 20:20:43.614" endtime="20210831 20:20:43.800"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210831 20:02:53.014" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20210831 20:02:50.012" endtime="20210831 20:02:53.014"/>
+<msg timestamp="20210831 20:20:46.801" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210831 20:20:43.800" endtime="20210831 20:20:46.801"/>
 </kw>
 <kw name="Switch Window" library="SeleniumLibrary">
 <arg>Home Page | MonoX</arg>
 <doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" starttime="20210831 20:02:53.014" endtime="20210831 20:02:53.133"/>
+<status status="PASS" starttime="20210831 20:20:46.802" endtime="20210831 20:20:47.504"/>
 </kw>
-<status status="PASS" starttime="20210831 20:02:39.223" endtime="20210831 20:02:53.133"/>
+<status status="PASS" starttime="20210831 20:20:32.550" endtime="20210831 20:20:47.504"/>
 </kw>
-<status status="PASS" starttime="20210831 20:01:50.287" endtime="20210831 20:02:53.135"/>
+<status status="PASS" starttime="20210831 20:19:30.777" endtime="20210831 20:20:47.513"/>
 </kw>
 <kw name="Swap" library="Swap">
 <arg>ETH</arg>
@@ -264,101 +264,101 @@
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Swap</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20210831 20:02:53.149" level="INFO">Current page contains text 'Swap'.</msg>
-<status status="PASS" starttime="20210831 20:02:53.139" endtime="20210831 20:02:53.149"/>
+<msg timestamp="20210831 20:20:47.578" level="INFO">Current page contains text 'Swap'.</msg>
+<status status="PASS" starttime="20210831 20:20:47.559" endtime="20210831 20:20:47.578"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@href="/swap?network=kovan"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:02:53.149" level="INFO">Clicking element '//*[@href="/swap?network=kovan"]'.</msg>
-<status status="PASS" starttime="20210831 20:02:53.149" endtime="20210831 20:02:54.310"/>
+<msg timestamp="20210831 20:20:47.580" level="INFO">Clicking element '//*[@href="/swap?network=kovan"]'.</msg>
+<status status="PASS" starttime="20210831 20:20:47.579" endtime="20210831 20:20:49.340"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Swap</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20210831 20:02:55.399" level="INFO">Current page contains text 'Swap'.</msg>
-<status status="PASS" starttime="20210831 20:02:54.310" endtime="20210831 20:02:55.399"/>
+<msg timestamp="20210831 20:20:50.454" level="INFO">Current page contains text 'Swap'.</msg>
+<status status="PASS" starttime="20210831 20:20:49.340" endtime="20210831 20:20:50.454"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>Select your token for the price chart</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20210831 20:02:55.399" endtime="20210831 20:02:55.410"/>
+<status status="PASS" starttime="20210831 20:20:50.454" endtime="20210831 20:20:50.495"/>
 </kw>
-<status status="PASS" starttime="20210831 20:02:53.139" endtime="20210831 20:02:55.411"/>
+<status status="PASS" starttime="20210831 20:20:47.556" endtime="20210831 20:20:50.496"/>
 </kw>
 <kw name="Select From Token" library="Swap">
 <arg>${FromToken}</arg>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@data-testid='from-toggle']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:02:55.412" level="INFO">Clicking element '//*[@data-testid='from-toggle']'.</msg>
-<status status="PASS" starttime="20210831 20:02:55.411" endtime="20210831 20:02:56.922"/>
+<msg timestamp="20210831 20:20:50.497" level="INFO">Clicking element '//*[@data-testid='from-toggle']'.</msg>
+<status status="PASS" starttime="20210831 20:20:50.497" endtime="20210831 20:20:52.486"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id:searchInput</arg>
 <arg>${token}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210831 20:02:56.922" level="INFO">Typing text 'ETH' into text field 'id:searchInput'.</msg>
-<status status="PASS" starttime="20210831 20:02:56.922" endtime="20210831 20:02:57.563"/>
+<msg timestamp="20210831 20:20:52.487" level="INFO">Typing text 'ETH' into text field 'id:searchInput'.</msg>
+<status status="PASS" starttime="20210831 20:20:52.486" endtime="20210831 20:20:53.471"/>
 </kw>
 <kw name="Wait Until Element Contains" library="SeleniumLibrary">
 <arg>//*[@data-testid='currency-container-0']</arg>
 <arg>${token}</arg>
 <arg>10</arg>
 <doc>Waits until the element ``locator`` contains ``text``.</doc>
-<status status="PASS" starttime="20210831 20:02:57.563" endtime="20210831 20:03:03.338"/>
+<status status="PASS" starttime="20210831 20:20:53.472" endtime="20210831 20:20:58.145"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@data-testid='currency-container-0']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:03:03.339" level="INFO">Clicking element '//*[@data-testid='currency-container-0']'.</msg>
-<status status="PASS" starttime="20210831 20:03:03.339" endtime="20210831 20:03:04.721"/>
+<msg timestamp="20210831 20:20:58.146" level="INFO">Clicking element '//*[@data-testid='currency-container-0']'.</msg>
+<status status="PASS" starttime="20210831 20:20:58.145" endtime="20210831 20:20:59.923"/>
 </kw>
-<status status="PASS" starttime="20210831 20:02:55.411" endtime="20210831 20:03:04.721"/>
+<status status="PASS" starttime="20210831 20:20:50.496" endtime="20210831 20:20:59.923"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>//*[@data-testid="from-toggle"]</arg>
 <arg>${FromToken}</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20210831 20:03:04.722" level="INFO">Verifying element '//*[@data-testid="from-toggle"]' contains exact text 'ETH'.</msg>
-<status status="PASS" starttime="20210831 20:03:04.722" endtime="20210831 20:03:04.866"/>
+<msg timestamp="20210831 20:20:59.924" level="INFO">Verifying element '//*[@data-testid="from-toggle"]' contains exact text 'ETH'.</msg>
+<status status="PASS" starttime="20210831 20:20:59.923" endtime="20210831 20:20:59.971"/>
 </kw>
 <kw name="Select To Token" library="Swap">
 <arg>${ToToken}</arg>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@data-testid='to-toggle']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:03:04.866" level="INFO">Clicking element '//*[@data-testid='to-toggle']'.</msg>
-<status status="PASS" starttime="20210831 20:03:04.866" endtime="20210831 20:03:05.020"/>
+<msg timestamp="20210831 20:20:59.972" level="INFO">Clicking element '//*[@data-testid='to-toggle']'.</msg>
+<status status="PASS" starttime="20210831 20:20:59.971" endtime="20210831 20:21:00.044"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id:searchInput</arg>
 <arg>${token}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210831 20:03:05.021" level="INFO">Typing text 'VCASH' into text field 'id:searchInput'.</msg>
-<status status="PASS" starttime="20210831 20:03:05.021" endtime="20210831 20:03:05.132"/>
+<msg timestamp="20210831 20:21:00.046" level="INFO">Typing text 'VCASH' into text field 'id:searchInput'.</msg>
+<status status="PASS" starttime="20210831 20:21:00.044" endtime="20210831 20:21:00.150"/>
 </kw>
 <kw name="Wait Until Element Contains" library="SeleniumLibrary">
 <arg>//*[@data-testid='currency-container-0']</arg>
 <arg>${token}</arg>
 <arg>10</arg>
 <doc>Waits until the element ``locator`` contains ``text``.</doc>
-<status status="PASS" starttime="20210831 20:03:05.132" endtime="20210831 20:03:06.341"/>
+<status status="PASS" starttime="20210831 20:21:00.151" endtime="20210831 20:21:01.629"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@data-testid='currency-container-0']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:03:06.342" level="INFO">Clicking element '//*[@data-testid='currency-container-0']'.</msg>
-<status status="PASS" starttime="20210831 20:03:06.342" endtime="20210831 20:03:06.647"/>
+<msg timestamp="20210831 20:21:01.631" level="INFO">Clicking element '//*[@data-testid='currency-container-0']'.</msg>
+<status status="PASS" starttime="20210831 20:21:01.630" endtime="20210831 20:21:03.741"/>
 </kw>
-<status status="PASS" starttime="20210831 20:03:04.866" endtime="20210831 20:03:06.647"/>
+<status status="PASS" starttime="20210831 20:20:59.971" endtime="20210831 20:21:03.750"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>//*[@data-testid="to-toggle"]</arg>
 <arg>${ToToken}</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20210831 20:03:06.647" level="INFO">Verifying element '//*[@data-testid="to-toggle"]' contains exact text 'VCASH'.</msg>
-<status status="PASS" starttime="20210831 20:03:06.647" endtime="20210831 20:03:06.733"/>
+<msg timestamp="20210831 20:21:03.754" level="INFO">Verifying element '//*[@data-testid="to-toggle"]' contains exact text 'VCASH'.</msg>
+<status status="PASS" starttime="20210831 20:21:03.750" endtime="20210831 20:21:04.122"/>
 </kw>
 <kw name="Fill From Token Amount" library="Swap">
 <arg>${Amount}</arg>
@@ -366,16 +366,16 @@
 <arg>//*[@data-testid='from-price-input']</arg>
 <arg>${amount}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210831 20:03:06.733" level="INFO">Typing text '0.005' into text field '//*[@data-testid='from-price-input']'.</msg>
-<status status="PASS" starttime="20210831 20:03:06.733" endtime="20210831 20:03:08.060"/>
+<msg timestamp="20210831 20:21:04.125" level="INFO">Typing text '0.005' into text field '//*[@data-testid='from-price-input']'.</msg>
+<status status="PASS" starttime="20210831 20:21:04.125" endtime="20210831 20:21:06.067"/>
 </kw>
-<status status="PASS" starttime="20210831 20:03:06.733" endtime="20210831 20:03:08.060"/>
+<status status="PASS" starttime="20210831 20:21:04.122" endtime="20210831 20:21:06.067"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210831 20:03:10.062" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20210831 20:03:08.060" endtime="20210831 20:03:10.063"/>
+<msg timestamp="20210831 20:21:08.076" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210831 20:21:06.067" endtime="20210831 20:21:08.076"/>
 </kw>
 <kw name="Confirm" library="Swap">
 <arg>Swap</arg>
@@ -383,82 +383,91 @@
 <arg>//*[@id="root"]/div/div[3]/div[1]/div[2]/div[1]/div[1]/div[2]/div[7]/div[1]</arg>
 <arg>${Transaction}</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20210831 20:03:10.064" level="INFO">Verifying element '//*[@id="root"]/div/div[3]/div[1]/div[2]/div[1]/div[1]/div[2]/div[7]/div[1]' contains exact text 'Swap'.</msg>
-<status status="PASS" starttime="20210831 20:03:10.063" endtime="20210831 20:03:10.233"/>
+<msg timestamp="20210831 20:21:08.079" level="INFO">Verifying element '//*[@id="root"]/div/div[3]/div[1]/div[2]/div[1]/div[1]/div[2]/div[7]/div[1]' contains exact text 'Swap'.</msg>
+<status status="PASS" starttime="20210831 20:21:08.078" endtime="20210831 20:21:08.127"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="root"]/div/div[3]/div[1]/div[2]/div[1]/div[1]/div[2]/div[7]/div[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:03:10.234" level="INFO">Clicking element '//*[@id="root"]/div/div[3]/div[1]/div[2]/div[1]/div[1]/div[2]/div[7]/div[1]'.</msg>
-<status status="PASS" starttime="20210831 20:03:10.234" endtime="20210831 20:03:10.523"/>
+<msg timestamp="20210831 20:21:08.127" level="INFO">Clicking element '//*[@id="root"]/div/div[3]/div[1]/div[2]/div[1]/div[1]/div[2]/div[7]/div[1]'.</msg>
+<status status="PASS" starttime="20210831 20:21:08.127" endtime="20210831 20:21:08.508"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>//*[@id="root"]/div[2]/div[2]/div/div[8]/div[1]</arg>
 <arg>Confirm ${Transaction}</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20210831 20:03:10.524" level="INFO">Verifying element '//*[@id="root"]/div[2]/div[2]/div/div[8]/div[1]' contains exact text 'Confirm Swap'.</msg>
-<status status="PASS" starttime="20210831 20:03:10.523" endtime="20210831 20:03:10.566"/>
+<msg timestamp="20210831 20:21:08.508" level="INFO">Verifying element '//*[@id="root"]/div[2]/div[2]/div/div[8]/div[1]' contains exact text 'Confirm Swap'.</msg>
+<status status="PASS" starttime="20210831 20:21:08.508" endtime="20210831 20:21:08.556"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="root"]/div[2]/div[2]/div/div[8]/div[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:03:10.566" level="INFO">Clicking element '//*[@id="root"]/div[2]/div[2]/div/div[8]/div[1]'.</msg>
-<status status="PASS" starttime="20210831 20:03:10.566" endtime="20210831 20:03:10.714"/>
+<msg timestamp="20210831 20:21:08.557" level="INFO">Clicking element '//*[@id="root"]/div[2]/div[2]/div/div[8]/div[1]'.</msg>
+<status status="PASS" starttime="20210831 20:21:08.556" endtime="20210831 20:21:08.724"/>
 </kw>
-<status status="PASS" starttime="20210831 20:03:10.063" endtime="20210831 20:03:10.714"/>
+<status status="PASS" starttime="20210831 20:21:08.076" endtime="20210831 20:21:08.724"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210831 20:03:15.716" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20210831 20:03:10.714" endtime="20210831 20:03:15.716"/>
+<msg timestamp="20210831 20:21:13.727" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210831 20:21:08.724" endtime="20210831 20:21:13.727"/>
 </kw>
 <kw name="Switch Window" library="SeleniumLibrary">
 <arg>MetaMask Notification</arg>
 <doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" starttime="20210831 20:03:15.717" endtime="20210831 20:03:15.837"/>
+<status status="PASS" starttime="20210831 20:21:13.727" endtime="20210831 20:21:13.933"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@data-testid="page-container-footer-next"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:03:15.839" level="INFO">Clicking element '//*[@data-testid="page-container-footer-next"]'.</msg>
-<status status="PASS" starttime="20210831 20:03:15.838" endtime="20210831 20:03:15.982"/>
+<msg timestamp="20210831 20:21:13.933" level="INFO">Clicking element '//*[@data-testid="page-container-footer-next"]'.</msg>
+<status status="PASS" starttime="20210831 20:21:13.933" endtime="20210831 20:21:14.049"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210831 20:03:20.984" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20210831 20:03:15.982" endtime="20210831 20:03:20.984"/>
+<msg timestamp="20210831 20:21:19.051" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210831 20:21:14.049" endtime="20210831 20:21:19.051"/>
 </kw>
 <kw name="Close Transaction Submit Modal" library="Swap">
 <arg>${ToToken}</arg>
 <kw name="Switch Window" library="SeleniumLibrary">
 <arg>Monoswap | MonoX</arg>
 <doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" starttime="20210831 20:03:20.986" endtime="20210831 20:03:21.735"/>
+<status status="PASS" starttime="20210831 20:21:19.053" endtime="20210831 20:21:19.157"/>
 </kw>
 <kw name="Wait Until Page Does Not Contain" library="SeleniumLibrary">
 <arg>Your Transaction Has Started</arg>
 <doc>Waits until ``text`` disappears from the current page.</doc>
-<status status="PASS" starttime="20210831 20:03:21.735" endtime="20210831 20:03:21.746"/>
+<status status="PASS" starttime="20210831 20:21:19.157" endtime="20210831 20:21:19.169"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>15s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210831 20:03:36.749" level="INFO">Slept 15 seconds</msg>
-<status status="PASS" starttime="20210831 20:03:21.747" endtime="20210831 20:03:36.750"/>
+<msg timestamp="20210831 20:21:34.171" level="INFO">Slept 15 seconds</msg>
+<status status="PASS" starttime="20210831 20:21:19.169" endtime="20210831 20:21:34.171"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Transaction Submitted</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20210831 20:03:36.761" level="INFO">Current page contains text 'Transaction Submitted'.</msg>
-<status status="PASS" starttime="20210831 20:03:36.750" endtime="20210831 20:03:36.761"/>
+<msg timestamp="20210831 20:21:34.185" level="INFO">Current page contains text 'Transaction Submitted'.</msg>
+<status status="PASS" starttime="20210831 20:21:34.172" endtime="20210831 20:21:34.185"/>
 </kw>
 <kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${URL}</var>
 <arg>//*[@id="root"]/div[2]/div[2]/div/a</arg>
 <arg>href</arg>
 <doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
-<status status="PASS" starttime="20210831 20:03:36.762" endtime="20210831 20:03:36.777"/>
+<msg timestamp="20210831 20:21:34.206" level="INFO">${URL} = https://kovan.etherscan.io/tx/0x6af753740f0be105f0233a076e17e2c0384d07fbc12ca31ffc6fc1a5e74bb657</msg>
+<status status="PASS" starttime="20210831 20:21:34.185" endtime="20210831 20:21:34.206"/>
+</kw>
+<kw name="Set Test Message" library="BuiltIn">
+<arg>${URL}</arg>
+<doc>Sets message for the current test case.</doc>
+<msg timestamp="20210831 20:21:34.207" level="INFO">Set test message to:
+https://kovan.etherscan.io/tx/0x6af753740f0be105f0233a076e17e2c0384d07fbc12ca31ffc6fc1a5e74bb657</msg>
+<status status="PASS" starttime="20210831 20:21:34.207" endtime="20210831 20:21:34.208"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>"${Token}" == "ETH"</arg>
@@ -471,37 +480,37 @@
 <arg>//*[@id="root"]/div[2]/div[2]/div/div[9]/div[1]</arg>
 <arg>Close</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20210831 20:03:36.783" level="INFO">Verifying element '//*[@id="root"]/div[2]/div[2]/div/div[9]/div[1]' contains exact text 'Close'.</msg>
-<status status="PASS" starttime="20210831 20:03:36.783" endtime="20210831 20:03:36.798"/>
+<msg timestamp="20210831 20:21:34.215" level="INFO">Verifying element '//*[@id="root"]/div[2]/div[2]/div/div[9]/div[1]' contains exact text 'Close'.</msg>
+<status status="PASS" starttime="20210831 20:21:34.215" endtime="20210831 20:21:34.243"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="root"]/div[2]/div[2]/div/div[9]/div[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:03:36.799" level="INFO">Clicking element '//*[@id="root"]/div[2]/div[2]/div/div[9]/div[1]'.</msg>
-<status status="PASS" starttime="20210831 20:03:36.799" endtime="20210831 20:03:36.984"/>
+<msg timestamp="20210831 20:21:34.244" level="INFO">Clicking element '//*[@id="root"]/div[2]/div[2]/div/div[9]/div[1]'.</msg>
+<status status="PASS" starttime="20210831 20:21:34.243" endtime="20210831 20:21:34.348"/>
 </kw>
-<status status="PASS" starttime="20210831 20:03:36.781" endtime="20210831 20:03:36.984"/>
+<status status="PASS" starttime="20210831 20:21:34.211" endtime="20210831 20:21:34.348"/>
 </kw>
-<status status="PASS" starttime="20210831 20:03:36.778" endtime="20210831 20:03:36.984"/>
+<status status="PASS" starttime="20210831 20:21:34.208" endtime="20210831 20:21:34.348"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>6s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210831 20:03:42.986" level="INFO">Slept 6 seconds</msg>
-<status status="PASS" starttime="20210831 20:03:36.984" endtime="20210831 20:03:42.987"/>
+<msg timestamp="20210831 20:21:40.349" level="INFO">Slept 6 seconds</msg>
+<status status="PASS" starttime="20210831 20:21:34.348" endtime="20210831 20:21:40.350"/>
 </kw>
-<status status="PASS" starttime="20210831 20:03:20.985" endtime="20210831 20:03:42.988"/>
+<status status="PASS" starttime="20210831 20:21:19.052" endtime="20210831 20:21:40.350"/>
 </kw>
-<status status="PASS" starttime="20210831 20:02:53.138" endtime="20210831 20:03:42.988"/>
+<status status="PASS" starttime="20210831 20:20:47.556" endtime="20210831 20:21:40.350"/>
 </kw>
 <kw name="Closing Browser" library="CommonFunctionalities" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20210831 20:03:42.990" endtime="20210831 20:03:43.299"/>
+<status status="PASS" starttime="20210831 20:21:40.356" endtime="20210831 20:21:40.557"/>
 </kw>
-<status status="PASS" starttime="20210831 20:03:42.989" endtime="20210831 20:03:43.299"/>
+<status status="PASS" starttime="20210831 20:21:40.354" endtime="20210831 20:21:40.558"/>
 </kw>
-<status status="PASS" starttime="20210831 20:01:50.287" endtime="20210831 20:03:43.299"/>
+<status status="PASS" starttime="20210831 20:19:30.776" endtime="20210831 20:21:40.558">https://kovan.etherscan.io/tx/0x6af753740f0be105f0233a076e17e2c0384d07fbc12ca31ffc6fc1a5e74bb657</status>
 </test>
 <test id="s1-t2" name="KOVAN - Swapping VCASH-ETH">
 <kw name="Connect MetaMask Wallet" library="CommonFunctionalities" type="SETUP">
@@ -511,252 +520,252 @@
 <arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
 <arg>sys, selenium.webdriver</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20210831 20:03:43.301" level="INFO">${ChromeOptions} = &lt;selenium.webdriver.chrome.options.Options object at 0x10f0a0e50&gt;</msg>
-<status status="PASS" starttime="20210831 20:03:43.301" endtime="20210831 20:03:43.301"/>
+<msg timestamp="20210831 20:21:40.560" level="INFO">${ChromeOptions} = &lt;selenium.webdriver.chrome.options.Options object at 0x10b3dcca0&gt;</msg>
+<status status="PASS" starttime="20210831 20:21:40.560" endtime="20210831 20:21:40.560"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${ChromeOptions}</arg>
 <arg>add_extension</arg>
 <arg>/Users/metoinside/Documents/qntism/monox-automation/initialAutomation/Resources/Plugins/MetaMask_v10.0.3.crx</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20210831 20:03:43.301" endtime="20210831 20:03:43.302"/>
+<status status="PASS" starttime="20210831 20:21:40.560" endtime="20210831 20:21:40.561"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <var>${Options}</var>
 <arg>${ChromeOptions}</arg>
 <arg>to_capabilities</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<msg timestamp="20210831 20:03:43.501" level="INFO">${Options} = {'browserName': 'chrome', 'version': '', 'platform': 'ANY', 'goog:chromeOptions': {'extensions': ['Q3IyNAMAAAAdBQAAEqwECqYCMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAj/u/XDdjlDyw7gHEtaaasZ9GdG8WOKAyJ...</msg>
-<status status="PASS" starttime="20210831 20:03:43.302" endtime="20210831 20:03:43.502"/>
+<msg timestamp="20210831 20:21:40.850" level="INFO">${Options} = {'browserName': 'chrome', 'version': '', 'platform': 'ANY', 'goog:chromeOptions': {'extensions': ['Q3IyNAMAAAAdBQAAEqwECqYCMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAj/u/XDdjlDyw7gHEtaaasZ9GdG8WOKAyJ...</msg>
+<status status="PASS" starttime="20210831 20:21:40.561" endtime="20210831 20:21:40.850"/>
 </kw>
 <kw name="Create Webdriver" library="SeleniumLibrary">
 <arg>Chrome</arg>
 <arg>desired_capabilities=${Options}</arg>
 <doc>Creates an instance of Selenium WebDriver.</doc>
-<msg timestamp="20210831 20:03:43.502" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
-<status status="PASS" starttime="20210831 20:03:43.502" endtime="20210831 20:03:52.733"/>
+<msg timestamp="20210831 20:21:40.851" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20210831 20:21:40.850" endtime="20210831 20:21:52.875"/>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>https://dev.monox.finance</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20210831 20:03:52.733" level="INFO">Opening url 'https://dev.monox.finance'</msg>
-<status status="PASS" starttime="20210831 20:03:52.733" endtime="20210831 20:04:12.033"/>
+<msg timestamp="20210831 20:21:52.877" level="INFO">Opening url 'https://dev.monox.finance'</msg>
+<status status="PASS" starttime="20210831 20:21:52.876" endtime="20210831 20:22:15.535"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20210831 20:04:12.034" endtime="20210831 20:04:12.474"/>
+<status status="PASS" starttime="20210831 20:22:15.535" endtime="20210831 20:22:15.723"/>
 </kw>
-<status status="PASS" starttime="20210831 20:03:43.301" endtime="20210831 20:04:12.475"/>
+<status status="PASS" starttime="20210831 20:21:40.559" endtime="20210831 20:22:15.723"/>
 </kw>
 <kw name="Import MetaMask Wallet" library="CommonFunctionalities">
 <kw name="Switch Window" library="SeleniumLibrary">
 <arg>MetaMask</arg>
 <doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" starttime="20210831 20:04:12.475" endtime="20210831 20:04:12.576"/>
+<status status="PASS" starttime="20210831 20:22:15.724" endtime="20210831 20:22:15.888"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210831 20:04:14.578" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20210831 20:04:12.577" endtime="20210831 20:04:14.578"/>
+<msg timestamp="20210831 20:22:17.891" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210831 20:22:15.888" endtime="20210831 20:22:17.893"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="app-content"]/div/div[3]/div/div/div/button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:04:14.580" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/div/div/button'.</msg>
-<status status="PASS" starttime="20210831 20:04:14.578" endtime="20210831 20:04:16.621"/>
+<msg timestamp="20210831 20:22:17.895" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/div/div/button'.</msg>
+<status status="PASS" starttime="20210831 20:22:17.894" endtime="20210831 20:22:19.877"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210831 20:04:17.622" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20210831 20:04:16.621" endtime="20210831 20:04:17.623"/>
+<msg timestamp="20210831 20:22:20.880" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210831 20:22:19.877" endtime="20210831 20:22:20.881"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="app-content"]/div/div[3]/div/div/div[2]/div/div[2]/div[1]/button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:04:17.625" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/div/div[2]/div/div[2]/div[1]/button'.</msg>
-<status status="PASS" starttime="20210831 20:04:17.623" endtime="20210831 20:04:18.030"/>
+<msg timestamp="20210831 20:22:20.882" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/div/div[2]/div/div[2]/div[1]/button'.</msg>
+<status status="PASS" starttime="20210831 20:22:20.881" endtime="20210831 20:22:21.293"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210831 20:04:19.031" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20210831 20:04:18.030" endtime="20210831 20:04:19.031"/>
+<msg timestamp="20210831 20:22:22.295" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210831 20:22:21.293" endtime="20210831 20:22:22.295"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="app-content"]/div/div[3]/div/div/div/div[5]/div[1]/footer/button[2]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:04:19.032" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/div/div/div[5]/div[1]/footer/button[2]'.</msg>
-<status status="PASS" starttime="20210831 20:04:19.032" endtime="20210831 20:04:19.376"/>
+<msg timestamp="20210831 20:22:22.296" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/div/div/div[5]/div[1]/footer/button[2]'.</msg>
+<status status="PASS" starttime="20210831 20:22:22.295" endtime="20210831 20:22:22.678"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210831 20:04:20.377" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20210831 20:04:19.377" endtime="20210831 20:04:20.378"/>
+<msg timestamp="20210831 20:22:23.680" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210831 20:22:22.679" endtime="20210831 20:22:23.680"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//*[@id="app-content"]/div/div[3]/div/div/form/div[4]/div[1]/div/input</arg>
 <arg>month foam ostrich boil negative border absorb swap metal tooth wise coconut</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210831 20:04:20.378" level="INFO">Typing text 'month foam ostrich boil negative border absorb swap metal tooth wise coconut' into text field '//*[@id="app-content"]/div/div[3]/div/div/form/div[4]/div[1]/div/input'.</msg>
-<status status="PASS" starttime="20210831 20:04:20.378" endtime="20210831 20:04:22.909"/>
+<msg timestamp="20210831 20:22:23.683" level="INFO">Typing text 'month foam ostrich boil negative border absorb swap metal tooth wise coconut' into text field '//*[@id="app-content"]/div/div[3]/div/div/form/div[4]/div[1]/div/input'.</msg>
+<status status="PASS" starttime="20210831 20:22:23.680" endtime="20210831 20:22:26.404"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210831 20:04:23.912" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20210831 20:04:22.909" endtime="20210831 20:04:23.912"/>
+<msg timestamp="20210831 20:22:27.407" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210831 20:22:26.404" endtime="20210831 20:22:27.407"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//*[@id="password"]</arg>
 <arg>Asdf1234</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210831 20:04:23.913" level="INFO">Typing text 'Asdf1234' into text field '//*[@id="password"]'.</msg>
-<status status="PASS" starttime="20210831 20:04:23.912" endtime="20210831 20:04:24.720"/>
+<msg timestamp="20210831 20:22:27.410" level="INFO">Typing text 'Asdf1234' into text field '//*[@id="password"]'.</msg>
+<status status="PASS" starttime="20210831 20:22:27.407" endtime="20210831 20:22:28.226"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//*[@id="confirm-password"]</arg>
 <arg>Asdf1234</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210831 20:04:24.720" level="INFO">Typing text 'Asdf1234' into text field '//*[@id="confirm-password"]'.</msg>
-<status status="PASS" starttime="20210831 20:04:24.720" endtime="20210831 20:04:24.816"/>
+<msg timestamp="20210831 20:22:28.227" level="INFO">Typing text 'Asdf1234' into text field '//*[@id="confirm-password"]'.</msg>
+<status status="PASS" starttime="20210831 20:22:28.227" endtime="20210831 20:22:28.339"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="app-content"]/div/div[3]/div/div/form/div[7]/div</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:04:24.818" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/div/form/div[7]/div'.</msg>
-<status status="PASS" starttime="20210831 20:04:24.817" endtime="20210831 20:04:25.933"/>
+<msg timestamp="20210831 20:22:28.339" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/div/form/div[7]/div'.</msg>
+<status status="PASS" starttime="20210831 20:22:28.339" endtime="20210831 20:22:29.104"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210831 20:04:26.936" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20210831 20:04:25.933" endtime="20210831 20:04:26.937"/>
+<msg timestamp="20210831 20:22:30.105" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210831 20:22:29.104" endtime="20210831 20:22:30.106"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="app-content"]/div/div[3]/div/div/form/button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:04:26.938" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/div/form/button'.</msg>
-<status status="PASS" starttime="20210831 20:04:26.937" endtime="20210831 20:04:27.276"/>
+<msg timestamp="20210831 20:22:30.107" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/div/form/button'.</msg>
+<status status="PASS" starttime="20210831 20:22:30.106" endtime="20210831 20:22:30.446"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210831 20:04:28.277" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20210831 20:04:27.276" endtime="20210831 20:04:28.277"/>
+<msg timestamp="20210831 20:22:31.448" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210831 20:22:30.446" endtime="20210831 20:22:31.448"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//*[@id="app-content"]/div/div[3]/div/div/button</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210831 20:04:28.277" endtime="20210831 20:04:29.682"/>
+<status status="PASS" starttime="20210831 20:22:31.448" endtime="20210831 20:22:33.317"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>//*[@id="app-content"]/div/div[3]/div/div/button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20210831 20:04:29.682" level="INFO">Clicking button '//*[@id="app-content"]/div/div[3]/div/div/button'.</msg>
-<status status="PASS" starttime="20210831 20:04:29.682" endtime="20210831 20:04:29.868"/>
+<msg timestamp="20210831 20:22:33.317" level="INFO">Clicking button '//*[@id="app-content"]/div/div[3]/div/div/button'.</msg>
+<status status="PASS" starttime="20210831 20:22:33.317" endtime="20210831 20:22:33.598"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="popover-content"]/div/div/section/header/div/button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:04:29.868" level="INFO">Clicking element '//*[@id="popover-content"]/div/div/section/header/div/button'.</msg>
-<status status="PASS" starttime="20210831 20:04:29.868" endtime="20210831 20:04:31.570"/>
+<msg timestamp="20210831 20:22:33.599" level="INFO">Clicking element '//*[@id="popover-content"]/div/div/section/header/div/button'.</msg>
+<status status="PASS" starttime="20210831 20:22:33.598" endtime="20210831 20:22:34.978"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210831 20:04:32.572" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20210831 20:04:31.571" endtime="20210831 20:04:32.573"/>
+<msg timestamp="20210831 20:22:35.980" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210831 20:22:34.978" endtime="20210831 20:22:35.980"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="app-content"]/div/div[1]/div/div[2]/div[1]/div</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:04:32.574" level="INFO">Clicking element '//*[@id="app-content"]/div/div[1]/div/div[2]/div[1]/div'.</msg>
-<status status="PASS" starttime="20210831 20:04:32.573" endtime="20210831 20:04:32.901"/>
+<msg timestamp="20210831 20:22:35.980" level="INFO">Clicking element '//*[@id="app-content"]/div/div[1]/div/div[2]/div[1]/div'.</msg>
+<status status="PASS" starttime="20210831 20:22:35.980" endtime="20210831 20:22:36.252"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="app-content"]/div/div[3]/div/li[3]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:04:32.901" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/li[3]'.</msg>
-<status status="PASS" starttime="20210831 20:04:32.901" endtime="20210831 20:04:33.093"/>
+<msg timestamp="20210831 20:22:36.252" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/li[3]'.</msg>
+<status status="PASS" starttime="20210831 20:22:36.252" endtime="20210831 20:22:36.461"/>
 </kw>
-<status status="PASS" starttime="20210831 20:04:12.475" endtime="20210831 20:04:33.093"/>
+<status status="PASS" starttime="20210831 20:22:15.723" endtime="20210831 20:22:36.461"/>
 </kw>
 <kw name="Complete Integration" library="CommonFunctionalities">
 <kw name="Switch Window" library="SeleniumLibrary">
 <arg>Home Page | MonoX</arg>
 <doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" starttime="20210831 20:04:33.094" endtime="20210831 20:04:35.098"/>
+<status status="PASS" starttime="20210831 20:22:36.462" endtime="20210831 20:22:38.623"/>
 </kw>
 <kw name="Page Should Contain Button" library="SeleniumLibrary">
 <arg>Connect Wallet</arg>
 <doc>Verifies button ``locator`` is found from current page.</doc>
-<msg timestamp="20210831 20:04:35.458" level="INFO">Current page contains button 'Connect Wallet'.</msg>
-<status status="PASS" starttime="20210831 20:04:35.099" endtime="20210831 20:04:35.458"/>
+<msg timestamp="20210831 20:22:39.086" level="INFO">Current page contains button 'Connect Wallet'.</msg>
+<status status="PASS" starttime="20210831 20:22:38.623" endtime="20210831 20:22:39.086"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>Connect Wallet</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20210831 20:04:35.459" level="INFO">Clicking button 'Connect Wallet'.</msg>
-<status status="PASS" starttime="20210831 20:04:35.458" endtime="20210831 20:04:37.515"/>
+<msg timestamp="20210831 20:22:39.086" level="INFO">Clicking button 'Connect Wallet'.</msg>
+<status status="PASS" starttime="20210831 20:22:39.086" endtime="20210831 20:22:41.365"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210831 20:04:38.516" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20210831 20:04:37.515" endtime="20210831 20:04:38.517"/>
+<msg timestamp="20210831 20:22:42.366" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210831 20:22:41.365" endtime="20210831 20:22:42.366"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Connect MetaMask Wallet</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20210831 20:04:38.540" level="INFO">Current page contains text 'Connect MetaMask Wallet'.</msg>
-<status status="PASS" starttime="20210831 20:04:38.517" endtime="20210831 20:04:38.540"/>
+<msg timestamp="20210831 20:22:42.413" level="INFO">Current page contains text 'Connect MetaMask Wallet'.</msg>
+<status status="PASS" starttime="20210831 20:22:42.366" endtime="20210831 20:22:42.413"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="root"]/div[2]/div[2]/div/div[2]/div</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:04:38.541" level="INFO">Clicking element '//*[@id="root"]/div[2]/div[2]/div/div[2]/div'.</msg>
-<status status="PASS" starttime="20210831 20:04:38.540" endtime="20210831 20:04:40.084"/>
+<msg timestamp="20210831 20:22:42.413" level="INFO">Clicking element '//*[@id="root"]/div[2]/div[2]/div/div[2]/div'.</msg>
+<status status="PASS" starttime="20210831 20:22:42.413" endtime="20210831 20:22:44.225"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210831 20:04:43.087" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20210831 20:04:40.086" endtime="20210831 20:04:43.087"/>
+<msg timestamp="20210831 20:22:47.231" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210831 20:22:44.226" endtime="20210831 20:22:47.232"/>
 </kw>
 <kw name="Switch Window" library="SeleniumLibrary">
 <arg>MetaMask Notification</arg>
 <doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" starttime="20210831 20:04:43.088" endtime="20210831 20:04:43.335"/>
+<status status="PASS" starttime="20210831 20:22:47.232" endtime="20210831 20:22:47.527"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="app-content"]/div/div[3]/div/div[2]/div[4]/div[2]/button[2]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:04:43.336" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/div[2]/div[4]/div[2]/button[2]'.</msg>
-<status status="PASS" starttime="20210831 20:04:43.335" endtime="20210831 20:04:43.424"/>
+<msg timestamp="20210831 20:22:47.527" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/div[2]/div[4]/div[2]/button[2]'.</msg>
+<status status="PASS" starttime="20210831 20:22:47.527" endtime="20210831 20:22:47.605"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="app-content"]/div/div[3]/div/div[2]/div[2]/div[2]/footer/button[2]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:04:43.424" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/div[2]/div[2]/div[2]/footer/button[2]'.</msg>
-<status status="PASS" starttime="20210831 20:04:43.424" endtime="20210831 20:04:43.667"/>
+<msg timestamp="20210831 20:22:47.605" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/div[2]/div[2]/div[2]/footer/button[2]'.</msg>
+<status status="PASS" starttime="20210831 20:22:47.605" endtime="20210831 20:22:47.776"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210831 20:04:46.669" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20210831 20:04:43.667" endtime="20210831 20:04:46.670"/>
+<msg timestamp="20210831 20:22:50.777" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210831 20:22:47.776" endtime="20210831 20:22:50.777"/>
 </kw>
 <kw name="Switch Window" library="SeleniumLibrary">
 <arg>Home Page | MonoX</arg>
 <doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" starttime="20210831 20:04:46.670" endtime="20210831 20:04:46.774"/>
+<status status="PASS" starttime="20210831 20:22:50.779" endtime="20210831 20:22:50.953"/>
 </kw>
-<status status="PASS" starttime="20210831 20:04:33.094" endtime="20210831 20:04:46.774"/>
+<status status="PASS" starttime="20210831 20:22:36.461" endtime="20210831 20:22:50.954"/>
 </kw>
-<status status="PASS" starttime="20210831 20:03:43.300" endtime="20210831 20:04:46.774"/>
+<status status="PASS" starttime="20210831 20:21:40.559" endtime="20210831 20:22:50.954"/>
 </kw>
 <kw name="Swap" library="Swap">
 <arg>VCASH</arg>
@@ -766,101 +775,101 @@
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Swap</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20210831 20:04:46.789" level="INFO">Current page contains text 'Swap'.</msg>
-<status status="PASS" starttime="20210831 20:04:46.777" endtime="20210831 20:04:46.789"/>
+<msg timestamp="20210831 20:22:51.031" level="INFO">Current page contains text 'Swap'.</msg>
+<status status="PASS" starttime="20210831 20:22:50.956" endtime="20210831 20:22:51.031"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@href="/swap?network=kovan"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:04:46.790" level="INFO">Clicking element '//*[@href="/swap?network=kovan"]'.</msg>
-<status status="PASS" starttime="20210831 20:04:46.790" endtime="20210831 20:04:48.221"/>
+<msg timestamp="20210831 20:22:51.031" level="INFO">Clicking element '//*[@href="/swap?network=kovan"]'.</msg>
+<status status="PASS" starttime="20210831 20:22:51.031" endtime="20210831 20:22:52.906"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Swap</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20210831 20:04:48.244" level="INFO">Current page contains text 'Swap'.</msg>
-<status status="PASS" starttime="20210831 20:04:48.222" endtime="20210831 20:04:48.244"/>
+<msg timestamp="20210831 20:22:53.704" level="INFO">Current page contains text 'Swap'.</msg>
+<status status="PASS" starttime="20210831 20:22:52.906" endtime="20210831 20:22:53.705"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>Select your token for the price chart</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20210831 20:04:48.244" endtime="20210831 20:04:49.367"/>
+<status status="PASS" starttime="20210831 20:22:53.705" endtime="20210831 20:22:53.908"/>
 </kw>
-<status status="PASS" starttime="20210831 20:04:46.776" endtime="20210831 20:04:49.368"/>
+<status status="PASS" starttime="20210831 20:22:50.955" endtime="20210831 20:22:53.908"/>
 </kw>
 <kw name="Select From Token" library="Swap">
 <arg>${FromToken}</arg>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@data-testid='from-toggle']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:04:49.369" level="INFO">Clicking element '//*[@data-testid='from-toggle']'.</msg>
-<status status="PASS" starttime="20210831 20:04:49.369" endtime="20210831 20:04:50.731"/>
+<msg timestamp="20210831 20:22:53.910" level="INFO">Clicking element '//*[@data-testid='from-toggle']'.</msg>
+<status status="PASS" starttime="20210831 20:22:53.909" endtime="20210831 20:22:55.562"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id:searchInput</arg>
 <arg>${token}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210831 20:04:50.732" level="INFO">Typing text 'VCASH' into text field 'id:searchInput'.</msg>
-<status status="PASS" starttime="20210831 20:04:50.731" endtime="20210831 20:04:51.253"/>
+<msg timestamp="20210831 20:22:55.562" level="INFO">Typing text 'VCASH' into text field 'id:searchInput'.</msg>
+<status status="PASS" starttime="20210831 20:22:55.562" endtime="20210831 20:22:57.382"/>
 </kw>
 <kw name="Wait Until Element Contains" library="SeleniumLibrary">
 <arg>//*[@data-testid='currency-container-0']</arg>
 <arg>${token}</arg>
 <arg>10</arg>
 <doc>Waits until the element ``locator`` contains ``text``.</doc>
-<status status="PASS" starttime="20210831 20:04:51.253" endtime="20210831 20:04:52.085"/>
+<status status="PASS" starttime="20210831 20:22:57.382" endtime="20210831 20:22:58.076"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@data-testid='currency-container-0']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:04:52.086" level="INFO">Clicking element '//*[@data-testid='currency-container-0']'.</msg>
-<status status="PASS" starttime="20210831 20:04:52.085" endtime="20210831 20:04:53.363"/>
+<msg timestamp="20210831 20:22:58.076" level="INFO">Clicking element '//*[@data-testid='currency-container-0']'.</msg>
+<status status="PASS" starttime="20210831 20:22:58.076" endtime="20210831 20:23:00.004"/>
 </kw>
-<status status="PASS" starttime="20210831 20:04:49.368" endtime="20210831 20:04:53.363"/>
+<status status="PASS" starttime="20210831 20:22:53.908" endtime="20210831 20:23:00.004"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>//*[@data-testid="from-toggle"]</arg>
 <arg>${FromToken}</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20210831 20:04:53.363" level="INFO">Verifying element '//*[@data-testid="from-toggle"]' contains exact text 'VCASH'.</msg>
-<status status="PASS" starttime="20210831 20:04:53.363" endtime="20210831 20:04:53.416"/>
+<msg timestamp="20210831 20:23:00.004" level="INFO">Verifying element '//*[@data-testid="from-toggle"]' contains exact text 'VCASH'.</msg>
+<status status="PASS" starttime="20210831 20:23:00.004" endtime="20210831 20:23:00.039"/>
 </kw>
 <kw name="Select To Token" library="Swap">
 <arg>${ToToken}</arg>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@data-testid='to-toggle']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:04:53.417" level="INFO">Clicking element '//*[@data-testid='to-toggle']'.</msg>
-<status status="PASS" starttime="20210831 20:04:53.417" endtime="20210831 20:04:53.512"/>
+<msg timestamp="20210831 20:23:00.040" level="INFO">Clicking element '//*[@data-testid='to-toggle']'.</msg>
+<status status="PASS" starttime="20210831 20:23:00.039" endtime="20210831 20:23:00.221"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id:searchInput</arg>
 <arg>${token}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210831 20:04:53.513" level="INFO">Typing text 'ETH' into text field 'id:searchInput'.</msg>
-<status status="PASS" starttime="20210831 20:04:53.513" endtime="20210831 20:04:53.605"/>
+<msg timestamp="20210831 20:23:00.222" level="INFO">Typing text 'ETH' into text field 'id:searchInput'.</msg>
+<status status="PASS" starttime="20210831 20:23:00.221" endtime="20210831 20:23:00.960"/>
 </kw>
 <kw name="Wait Until Element Contains" library="SeleniumLibrary">
 <arg>//*[@data-testid='currency-container-0']</arg>
 <arg>${token}</arg>
 <arg>10</arg>
 <doc>Waits until the element ``locator`` contains ``text``.</doc>
-<status status="PASS" starttime="20210831 20:04:53.605" endtime="20210831 20:04:54.749"/>
+<status status="PASS" starttime="20210831 20:23:00.960" endtime="20210831 20:23:03.034"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@data-testid='currency-container-0']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:04:54.750" level="INFO">Clicking element '//*[@data-testid='currency-container-0']'.</msg>
-<status status="PASS" starttime="20210831 20:04:54.750" endtime="20210831 20:04:55.192"/>
+<msg timestamp="20210831 20:23:03.036" level="INFO">Clicking element '//*[@data-testid='currency-container-0']'.</msg>
+<status status="PASS" starttime="20210831 20:23:03.035" endtime="20210831 20:23:03.955"/>
 </kw>
-<status status="PASS" starttime="20210831 20:04:53.416" endtime="20210831 20:04:55.192"/>
+<status status="PASS" starttime="20210831 20:23:00.039" endtime="20210831 20:23:03.955"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>//*[@data-testid="to-toggle"]</arg>
 <arg>${ToToken}</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20210831 20:04:55.193" level="INFO">Verifying element '//*[@data-testid="to-toggle"]' contains exact text 'ETH'.</msg>
-<status status="PASS" starttime="20210831 20:04:55.192" endtime="20210831 20:04:55.268"/>
+<msg timestamp="20210831 20:23:03.956" level="INFO">Verifying element '//*[@data-testid="to-toggle"]' contains exact text 'ETH'.</msg>
+<status status="PASS" starttime="20210831 20:23:03.956" endtime="20210831 20:23:04.024"/>
 </kw>
 <kw name="Fill From Token Amount" library="Swap">
 <arg>${Amount}</arg>
@@ -868,16 +877,16 @@
 <arg>//*[@data-testid='from-price-input']</arg>
 <arg>${amount}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210831 20:04:55.269" level="INFO">Typing text '0.006' into text field '//*[@data-testid='from-price-input']'.</msg>
-<status status="PASS" starttime="20210831 20:04:55.269" endtime="20210831 20:04:55.611"/>
+<msg timestamp="20210831 20:23:04.026" level="INFO">Typing text '0.006' into text field '//*[@data-testid='from-price-input']'.</msg>
+<status status="PASS" starttime="20210831 20:23:04.025" endtime="20210831 20:23:04.497"/>
 </kw>
-<status status="PASS" starttime="20210831 20:04:55.268" endtime="20210831 20:04:55.611"/>
+<status status="PASS" starttime="20210831 20:23:04.024" endtime="20210831 20:23:04.498"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210831 20:04:57.612" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20210831 20:04:55.612" endtime="20210831 20:04:57.612"/>
+<msg timestamp="20210831 20:23:06.503" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210831 20:23:04.501" endtime="20210831 20:23:06.504"/>
 </kw>
 <kw name="Confirm" library="Swap">
 <arg>Swap</arg>
@@ -885,82 +894,91 @@
 <arg>//*[@id="root"]/div/div[3]/div[1]/div[2]/div[1]/div[1]/div[2]/div[7]/div[1]</arg>
 <arg>${Transaction}</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20210831 20:04:57.614" level="INFO">Verifying element '//*[@id="root"]/div/div[3]/div[1]/div[2]/div[1]/div[1]/div[2]/div[7]/div[1]' contains exact text 'Swap'.</msg>
-<status status="PASS" starttime="20210831 20:04:57.613" endtime="20210831 20:04:58.613"/>
+<msg timestamp="20210831 20:23:06.509" level="INFO">Verifying element '//*[@id="root"]/div/div[3]/div[1]/div[2]/div[1]/div[1]/div[2]/div[7]/div[1]' contains exact text 'Swap'.</msg>
+<status status="PASS" starttime="20210831 20:23:06.508" endtime="20210831 20:23:08.463"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="root"]/div/div[3]/div[1]/div[2]/div[1]/div[1]/div[2]/div[7]/div[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:04:58.614" level="INFO">Clicking element '//*[@id="root"]/div/div[3]/div[1]/div[2]/div[1]/div[1]/div[2]/div[7]/div[1]'.</msg>
-<status status="PASS" starttime="20210831 20:04:58.614" endtime="20210831 20:04:58.895"/>
+<msg timestamp="20210831 20:23:08.463" level="INFO">Clicking element '//*[@id="root"]/div/div[3]/div[1]/div[2]/div[1]/div[1]/div[2]/div[7]/div[1]'.</msg>
+<status status="PASS" starttime="20210831 20:23:08.463" endtime="20210831 20:23:08.856"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>//*[@id="root"]/div[2]/div[2]/div/div[8]/div[1]</arg>
 <arg>Confirm ${Transaction}</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20210831 20:04:58.897" level="INFO">Verifying element '//*[@id="root"]/div[2]/div[2]/div/div[8]/div[1]' contains exact text 'Confirm Swap'.</msg>
-<status status="PASS" starttime="20210831 20:04:58.896" endtime="20210831 20:04:59.010"/>
+<msg timestamp="20210831 20:23:08.857" level="INFO">Verifying element '//*[@id="root"]/div[2]/div[2]/div/div[8]/div[1]' contains exact text 'Confirm Swap'.</msg>
+<status status="PASS" starttime="20210831 20:23:08.856" endtime="20210831 20:23:09.057"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="root"]/div[2]/div[2]/div/div[8]/div[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:04:59.010" level="INFO">Clicking element '//*[@id="root"]/div[2]/div[2]/div/div[8]/div[1]'.</msg>
-<status status="PASS" starttime="20210831 20:04:59.010" endtime="20210831 20:04:59.164"/>
+<msg timestamp="20210831 20:23:09.057" level="INFO">Clicking element '//*[@id="root"]/div[2]/div[2]/div/div[8]/div[1]'.</msg>
+<status status="PASS" starttime="20210831 20:23:09.057" endtime="20210831 20:23:09.327"/>
 </kw>
-<status status="PASS" starttime="20210831 20:04:57.613" endtime="20210831 20:04:59.164"/>
+<status status="PASS" starttime="20210831 20:23:06.505" endtime="20210831 20:23:09.327"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210831 20:05:04.167" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20210831 20:04:59.164" endtime="20210831 20:05:04.167"/>
+<msg timestamp="20210831 20:23:14.328" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210831 20:23:09.327" endtime="20210831 20:23:14.329"/>
 </kw>
 <kw name="Switch Window" library="SeleniumLibrary">
 <arg>MetaMask Notification</arg>
 <doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" starttime="20210831 20:05:04.167" endtime="20210831 20:05:04.268"/>
+<status status="PASS" starttime="20210831 20:23:14.329" endtime="20210831 20:23:14.539"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@data-testid="page-container-footer-next"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:05:04.268" level="INFO">Clicking element '//*[@data-testid="page-container-footer-next"]'.</msg>
-<status status="PASS" starttime="20210831 20:05:04.268" endtime="20210831 20:05:04.437"/>
+<msg timestamp="20210831 20:23:14.540" level="INFO">Clicking element '//*[@data-testid="page-container-footer-next"]'.</msg>
+<status status="PASS" starttime="20210831 20:23:14.539" endtime="20210831 20:23:14.636"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210831 20:05:09.439" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20210831 20:05:04.438" endtime="20210831 20:05:09.439"/>
+<msg timestamp="20210831 20:23:19.638" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210831 20:23:14.637" endtime="20210831 20:23:19.638"/>
 </kw>
 <kw name="Close Transaction Submit Modal" library="Swap">
 <arg>${ToToken}</arg>
 <kw name="Switch Window" library="SeleniumLibrary">
 <arg>Monoswap | MonoX</arg>
 <doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" starttime="20210831 20:05:09.440" endtime="20210831 20:05:09.700"/>
+<status status="PASS" starttime="20210831 20:23:19.641" endtime="20210831 20:23:19.726"/>
 </kw>
 <kw name="Wait Until Page Does Not Contain" library="SeleniumLibrary">
 <arg>Your Transaction Has Started</arg>
 <doc>Waits until ``text`` disappears from the current page.</doc>
-<status status="PASS" starttime="20210831 20:05:09.701" endtime="20210831 20:05:09.710"/>
+<status status="PASS" starttime="20210831 20:23:19.726" endtime="20210831 20:23:19.738"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>15s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210831 20:05:24.711" level="INFO">Slept 15 seconds</msg>
-<status status="PASS" starttime="20210831 20:05:09.711" endtime="20210831 20:05:24.712"/>
+<msg timestamp="20210831 20:23:34.739" level="INFO">Slept 15 seconds</msg>
+<status status="PASS" starttime="20210831 20:23:19.738" endtime="20210831 20:23:34.740"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Transaction Submitted</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20210831 20:05:24.722" level="INFO">Current page contains text 'Transaction Submitted'.</msg>
-<status status="PASS" starttime="20210831 20:05:24.712" endtime="20210831 20:05:24.722"/>
+<msg timestamp="20210831 20:23:34.765" level="INFO">Current page contains text 'Transaction Submitted'.</msg>
+<status status="PASS" starttime="20210831 20:23:34.741" endtime="20210831 20:23:34.765"/>
 </kw>
 <kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${URL}</var>
 <arg>//*[@id="root"]/div[2]/div[2]/div/a</arg>
 <arg>href</arg>
 <doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
-<status status="PASS" starttime="20210831 20:05:24.723" endtime="20210831 20:05:24.737"/>
+<msg timestamp="20210831 20:23:34.779" level="INFO">${URL} = https://kovan.etherscan.io/tx/0x859e19e8f015b356f9830fa011673459698608765c5c60060523c9c78cbdc288</msg>
+<status status="PASS" starttime="20210831 20:23:34.765" endtime="20210831 20:23:34.779"/>
+</kw>
+<kw name="Set Test Message" library="BuiltIn">
+<arg>${URL}</arg>
+<doc>Sets message for the current test case.</doc>
+<msg timestamp="20210831 20:23:34.780" level="INFO">Set test message to:
+https://kovan.etherscan.io/tx/0x859e19e8f015b356f9830fa011673459698608765c5c60060523c9c78cbdc288</msg>
+<status status="PASS" starttime="20210831 20:23:34.780" endtime="20210831 20:23:34.780"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>"${Token}" == "ETH"</arg>
@@ -973,37 +991,37 @@
 <arg>//*[@id="root"]/div[2]/div[2]/div/div[8]/div[1]</arg>
 <arg>Close</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20210831 20:05:24.739" level="INFO">Verifying element '//*[@id="root"]/div[2]/div[2]/div/div[8]/div[1]' contains exact text 'Close'.</msg>
-<status status="PASS" starttime="20210831 20:05:24.738" endtime="20210831 20:05:24.754"/>
+<msg timestamp="20210831 20:23:34.782" level="INFO">Verifying element '//*[@id="root"]/div[2]/div[2]/div/div[8]/div[1]' contains exact text 'Close'.</msg>
+<status status="PASS" starttime="20210831 20:23:34.782" endtime="20210831 20:23:34.795"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="root"]/div[2]/div[2]/div/div[8]/div[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:05:24.755" level="INFO">Clicking element '//*[@id="root"]/div[2]/div[2]/div/div[8]/div[1]'.</msg>
-<status status="PASS" starttime="20210831 20:05:24.754" endtime="20210831 20:05:24.862"/>
+<msg timestamp="20210831 20:23:34.795" level="INFO">Clicking element '//*[@id="root"]/div[2]/div[2]/div/div[8]/div[1]'.</msg>
+<status status="PASS" starttime="20210831 20:23:34.795" endtime="20210831 20:23:34.866"/>
 </kw>
-<status status="PASS" starttime="20210831 20:05:24.738" endtime="20210831 20:05:24.862"/>
+<status status="PASS" starttime="20210831 20:23:34.782" endtime="20210831 20:23:34.866"/>
 </kw>
-<status status="PASS" starttime="20210831 20:05:24.737" endtime="20210831 20:05:24.862"/>
+<status status="PASS" starttime="20210831 20:23:34.781" endtime="20210831 20:23:34.866"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>6s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210831 20:05:30.863" level="INFO">Slept 6 seconds</msg>
-<status status="PASS" starttime="20210831 20:05:24.862" endtime="20210831 20:05:30.864"/>
+<msg timestamp="20210831 20:23:40.868" level="INFO">Slept 6 seconds</msg>
+<status status="PASS" starttime="20210831 20:23:34.866" endtime="20210831 20:23:40.869"/>
 </kw>
-<status status="PASS" starttime="20210831 20:05:09.440" endtime="20210831 20:05:30.864"/>
+<status status="PASS" starttime="20210831 20:23:19.640" endtime="20210831 20:23:40.869"/>
 </kw>
-<status status="PASS" starttime="20210831 20:04:46.776" endtime="20210831 20:05:30.865"/>
+<status status="PASS" starttime="20210831 20:22:50.955" endtime="20210831 20:23:40.869"/>
 </kw>
 <kw name="Closing Browser" library="CommonFunctionalities" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20210831 20:05:30.867" endtime="20210831 20:05:31.098"/>
+<status status="PASS" starttime="20210831 20:23:40.873" endtime="20210831 20:23:41.066"/>
 </kw>
-<status status="PASS" starttime="20210831 20:05:30.866" endtime="20210831 20:05:31.099"/>
+<status status="PASS" starttime="20210831 20:23:40.872" endtime="20210831 20:23:41.066"/>
 </kw>
-<status status="PASS" starttime="20210831 20:03:43.300" endtime="20210831 20:05:31.099"/>
+<status status="PASS" starttime="20210831 20:21:40.559" endtime="20210831 20:23:41.066">https://kovan.etherscan.io/tx/0x859e19e8f015b356f9830fa011673459698608765c5c60060523c9c78cbdc288</status>
 </test>
 <test id="s1-t3" name="KOVAN - Unwrap - ETH">
 <kw name="Connect MetaMask Wallet" library="CommonFunctionalities" type="SETUP">
@@ -1013,252 +1031,252 @@
 <arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
 <arg>sys, selenium.webdriver</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20210831 20:05:31.106" level="INFO">${ChromeOptions} = &lt;selenium.webdriver.chrome.options.Options object at 0x10f07a910&gt;</msg>
-<status status="PASS" starttime="20210831 20:05:31.104" endtime="20210831 20:05:31.106"/>
+<msg timestamp="20210831 20:23:41.067" level="INFO">${ChromeOptions} = &lt;selenium.webdriver.chrome.options.Options object at 0x10b3b8be0&gt;</msg>
+<status status="PASS" starttime="20210831 20:23:41.067" endtime="20210831 20:23:41.067"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${ChromeOptions}</arg>
 <arg>add_extension</arg>
 <arg>/Users/metoinside/Documents/qntism/monox-automation/initialAutomation/Resources/Plugins/MetaMask_v10.0.3.crx</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20210831 20:05:31.107" endtime="20210831 20:05:31.109"/>
+<status status="PASS" starttime="20210831 20:23:41.067" endtime="20210831 20:23:41.068"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <var>${Options}</var>
 <arg>${ChromeOptions}</arg>
 <arg>to_capabilities</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<msg timestamp="20210831 20:05:31.257" level="INFO">${Options} = {'browserName': 'chrome', 'version': '', 'platform': 'ANY', 'goog:chromeOptions': {'extensions': ['Q3IyNAMAAAAdBQAAEqwECqYCMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAj/u/XDdjlDyw7gHEtaaasZ9GdG8WOKAyJ...</msg>
-<status status="PASS" starttime="20210831 20:05:31.109" endtime="20210831 20:05:31.257"/>
+<msg timestamp="20210831 20:23:41.308" level="INFO">${Options} = {'browserName': 'chrome', 'version': '', 'platform': 'ANY', 'goog:chromeOptions': {'extensions': ['Q3IyNAMAAAAdBQAAEqwECqYCMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAj/u/XDdjlDyw7gHEtaaasZ9GdG8WOKAyJ...</msg>
+<status status="PASS" starttime="20210831 20:23:41.068" endtime="20210831 20:23:41.308"/>
 </kw>
 <kw name="Create Webdriver" library="SeleniumLibrary">
 <arg>Chrome</arg>
 <arg>desired_capabilities=${Options}</arg>
 <doc>Creates an instance of Selenium WebDriver.</doc>
-<msg timestamp="20210831 20:05:31.257" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
-<status status="PASS" starttime="20210831 20:05:31.257" endtime="20210831 20:05:40.311"/>
+<msg timestamp="20210831 20:23:41.309" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20210831 20:23:41.308" endtime="20210831 20:23:50.633"/>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>https://dev.monox.finance</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20210831 20:05:40.312" level="INFO">Opening url 'https://dev.monox.finance'</msg>
-<status status="PASS" starttime="20210831 20:05:40.312" endtime="20210831 20:05:54.898"/>
+<msg timestamp="20210831 20:23:50.633" level="INFO">Opening url 'https://dev.monox.finance'</msg>
+<status status="PASS" starttime="20210831 20:23:50.633" endtime="20210831 20:24:09.883"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20210831 20:05:54.898" endtime="20210831 20:05:55.111"/>
+<status status="PASS" starttime="20210831 20:24:09.886" endtime="20210831 20:24:13.242"/>
 </kw>
-<status status="PASS" starttime="20210831 20:05:31.104" endtime="20210831 20:05:55.112"/>
+<status status="PASS" starttime="20210831 20:23:41.067" endtime="20210831 20:24:13.243"/>
 </kw>
 <kw name="Import MetaMask Wallet" library="CommonFunctionalities">
 <kw name="Switch Window" library="SeleniumLibrary">
 <arg>MetaMask</arg>
 <doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" starttime="20210831 20:05:55.113" endtime="20210831 20:05:55.232"/>
+<status status="PASS" starttime="20210831 20:24:13.244" endtime="20210831 20:24:13.593"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210831 20:05:57.235" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20210831 20:05:55.232" endtime="20210831 20:05:57.235"/>
+<msg timestamp="20210831 20:24:15.600" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210831 20:24:13.593" endtime="20210831 20:24:15.600"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="app-content"]/div/div[3]/div/div/div/button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:05:57.236" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/div/div/button'.</msg>
-<status status="PASS" starttime="20210831 20:05:57.235" endtime="20210831 20:05:59.396"/>
+<msg timestamp="20210831 20:24:15.602" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/div/div/button'.</msg>
+<status status="PASS" starttime="20210831 20:24:15.600" endtime="20210831 20:24:17.926"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210831 20:06:00.398" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20210831 20:05:59.397" endtime="20210831 20:06:00.399"/>
+<msg timestamp="20210831 20:24:18.929" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210831 20:24:17.927" endtime="20210831 20:24:18.930"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="app-content"]/div/div[3]/div/div/div[2]/div/div[2]/div[1]/button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:06:00.401" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/div/div[2]/div/div[2]/div[1]/button'.</msg>
-<status status="PASS" starttime="20210831 20:06:00.400" endtime="20210831 20:06:00.828"/>
+<msg timestamp="20210831 20:24:18.931" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/div/div[2]/div/div[2]/div[1]/button'.</msg>
+<status status="PASS" starttime="20210831 20:24:18.930" endtime="20210831 20:24:19.335"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210831 20:06:01.829" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20210831 20:06:00.828" endtime="20210831 20:06:01.830"/>
+<msg timestamp="20210831 20:24:20.338" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210831 20:24:19.335" endtime="20210831 20:24:20.338"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="app-content"]/div/div[3]/div/div/div/div[5]/div[1]/footer/button[2]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:06:01.830" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/div/div/div[5]/div[1]/footer/button[2]'.</msg>
-<status status="PASS" starttime="20210831 20:06:01.830" endtime="20210831 20:06:02.419"/>
+<msg timestamp="20210831 20:24:20.339" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/div/div/div[5]/div[1]/footer/button[2]'.</msg>
+<status status="PASS" starttime="20210831 20:24:20.339" endtime="20210831 20:24:21.820"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210831 20:06:03.421" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20210831 20:06:02.420" endtime="20210831 20:06:03.422"/>
+<msg timestamp="20210831 20:24:22.822" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210831 20:24:21.820" endtime="20210831 20:24:22.822"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//*[@id="app-content"]/div/div[3]/div/div/form/div[4]/div[1]/div/input</arg>
 <arg>month foam ostrich boil negative border absorb swap metal tooth wise coconut</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210831 20:06:03.423" level="INFO">Typing text 'month foam ostrich boil negative border absorb swap metal tooth wise coconut' into text field '//*[@id="app-content"]/div/div[3]/div/div/form/div[4]/div[1]/div/input'.</msg>
-<status status="PASS" starttime="20210831 20:06:03.422" endtime="20210831 20:06:05.892"/>
+<msg timestamp="20210831 20:24:22.823" level="INFO">Typing text 'month foam ostrich boil negative border absorb swap metal tooth wise coconut' into text field '//*[@id="app-content"]/div/div[3]/div/div/form/div[4]/div[1]/div/input'.</msg>
+<status status="PASS" starttime="20210831 20:24:22.822" endtime="20210831 20:24:25.370"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210831 20:06:06.894" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20210831 20:06:05.892" endtime="20210831 20:06:06.894"/>
+<msg timestamp="20210831 20:24:26.372" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210831 20:24:25.371" endtime="20210831 20:24:26.372"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//*[@id="password"]</arg>
 <arg>Asdf1234</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210831 20:06:06.895" level="INFO">Typing text 'Asdf1234' into text field '//*[@id="password"]'.</msg>
-<status status="PASS" starttime="20210831 20:06:06.895" endtime="20210831 20:06:07.728"/>
+<msg timestamp="20210831 20:24:26.374" level="INFO">Typing text 'Asdf1234' into text field '//*[@id="password"]'.</msg>
+<status status="PASS" starttime="20210831 20:24:26.373" endtime="20210831 20:24:27.374"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//*[@id="confirm-password"]</arg>
 <arg>Asdf1234</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210831 20:06:07.729" level="INFO">Typing text 'Asdf1234' into text field '//*[@id="confirm-password"]'.</msg>
-<status status="PASS" starttime="20210831 20:06:07.728" endtime="20210831 20:06:07.922"/>
+<msg timestamp="20210831 20:24:27.376" level="INFO">Typing text 'Asdf1234' into text field '//*[@id="confirm-password"]'.</msg>
+<status status="PASS" starttime="20210831 20:24:27.374" endtime="20210831 20:24:27.490"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="app-content"]/div/div[3]/div/div/form/div[7]/div</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:06:07.923" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/div/form/div[7]/div'.</msg>
-<status status="PASS" starttime="20210831 20:06:07.922" endtime="20210831 20:06:08.947"/>
+<msg timestamp="20210831 20:24:27.491" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/div/form/div[7]/div'.</msg>
+<status status="PASS" starttime="20210831 20:24:27.490" endtime="20210831 20:24:28.290"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210831 20:06:09.949" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20210831 20:06:08.948" endtime="20210831 20:06:09.950"/>
+<msg timestamp="20210831 20:24:29.292" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210831 20:24:28.290" endtime="20210831 20:24:29.293"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="app-content"]/div/div[3]/div/div/form/button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:06:09.952" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/div/form/button'.</msg>
-<status status="PASS" starttime="20210831 20:06:09.951" endtime="20210831 20:06:10.280"/>
+<msg timestamp="20210831 20:24:29.294" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/div/form/button'.</msg>
+<status status="PASS" starttime="20210831 20:24:29.293" endtime="20210831 20:24:29.635"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210831 20:06:11.284" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20210831 20:06:10.280" endtime="20210831 20:06:11.285"/>
+<msg timestamp="20210831 20:24:30.636" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210831 20:24:29.635" endtime="20210831 20:24:30.637"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//*[@id="app-content"]/div/div[3]/div/div/button</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210831 20:06:11.285" endtime="20210831 20:06:12.751"/>
+<status status="PASS" starttime="20210831 20:24:30.637" endtime="20210831 20:24:32.421"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>//*[@id="app-content"]/div/div[3]/div/div/button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20210831 20:06:12.751" level="INFO">Clicking button '//*[@id="app-content"]/div/div[3]/div/div/button'.</msg>
-<status status="PASS" starttime="20210831 20:06:12.751" endtime="20210831 20:06:12.867"/>
+<msg timestamp="20210831 20:24:32.424" level="INFO">Clicking button '//*[@id="app-content"]/div/div[3]/div/div/button'.</msg>
+<status status="PASS" starttime="20210831 20:24:32.424" endtime="20210831 20:24:32.609"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="popover-content"]/div/div/section/header/div/button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:06:12.870" level="INFO">Clicking element '//*[@id="popover-content"]/div/div/section/header/div/button'.</msg>
-<status status="PASS" starttime="20210831 20:06:12.867" endtime="20210831 20:06:14.567"/>
+<msg timestamp="20210831 20:24:32.610" level="INFO">Clicking element '//*[@id="popover-content"]/div/div/section/header/div/button'.</msg>
+<status status="PASS" starttime="20210831 20:24:32.609" endtime="20210831 20:24:33.744"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210831 20:06:15.570" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20210831 20:06:14.567" endtime="20210831 20:06:15.570"/>
+<msg timestamp="20210831 20:24:34.746" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210831 20:24:33.744" endtime="20210831 20:24:34.746"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="app-content"]/div/div[1]/div/div[2]/div[1]/div</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:06:15.572" level="INFO">Clicking element '//*[@id="app-content"]/div/div[1]/div/div[2]/div[1]/div'.</msg>
-<status status="PASS" starttime="20210831 20:06:15.571" endtime="20210831 20:06:15.917"/>
+<msg timestamp="20210831 20:24:34.747" level="INFO">Clicking element '//*[@id="app-content"]/div/div[1]/div/div[2]/div[1]/div'.</msg>
+<status status="PASS" starttime="20210831 20:24:34.746" endtime="20210831 20:24:35.001"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="app-content"]/div/div[3]/div/li[3]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:06:15.918" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/li[3]'.</msg>
-<status status="PASS" starttime="20210831 20:06:15.917" endtime="20210831 20:06:16.109"/>
+<msg timestamp="20210831 20:24:35.001" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/li[3]'.</msg>
+<status status="PASS" starttime="20210831 20:24:35.001" endtime="20210831 20:24:35.167"/>
 </kw>
-<status status="PASS" starttime="20210831 20:05:55.112" endtime="20210831 20:06:16.109"/>
+<status status="PASS" starttime="20210831 20:24:13.243" endtime="20210831 20:24:35.167"/>
 </kw>
 <kw name="Complete Integration" library="CommonFunctionalities">
 <kw name="Switch Window" library="SeleniumLibrary">
 <arg>Home Page | MonoX</arg>
 <doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" starttime="20210831 20:06:16.109" endtime="20210831 20:06:18.573"/>
+<status status="PASS" starttime="20210831 20:24:35.168" endtime="20210831 20:24:35.660"/>
 </kw>
 <kw name="Page Should Contain Button" library="SeleniumLibrary">
 <arg>Connect Wallet</arg>
 <doc>Verifies button ``locator`` is found from current page.</doc>
-<msg timestamp="20210831 20:06:18.705" level="INFO">Current page contains button 'Connect Wallet'.</msg>
-<status status="PASS" starttime="20210831 20:06:18.573" endtime="20210831 20:06:18.705"/>
+<msg timestamp="20210831 20:24:35.811" level="INFO">Current page contains button 'Connect Wallet'.</msg>
+<status status="PASS" starttime="20210831 20:24:35.660" endtime="20210831 20:24:35.811"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>Connect Wallet</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20210831 20:06:18.705" level="INFO">Clicking button 'Connect Wallet'.</msg>
-<status status="PASS" starttime="20210831 20:06:18.705" endtime="20210831 20:06:21.492"/>
+<msg timestamp="20210831 20:24:35.811" level="INFO">Clicking button 'Connect Wallet'.</msg>
+<status status="PASS" starttime="20210831 20:24:35.811" endtime="20210831 20:24:38.653"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210831 20:06:22.493" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20210831 20:06:21.492" endtime="20210831 20:06:22.494"/>
+<msg timestamp="20210831 20:24:39.654" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210831 20:24:38.654" endtime="20210831 20:24:39.657"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Connect MetaMask Wallet</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20210831 20:06:22.536" level="INFO">Current page contains text 'Connect MetaMask Wallet'.</msg>
-<status status="PASS" starttime="20210831 20:06:22.494" endtime="20210831 20:06:22.536"/>
+<msg timestamp="20210831 20:24:39.701" level="INFO">Current page contains text 'Connect MetaMask Wallet'.</msg>
+<status status="PASS" starttime="20210831 20:24:39.657" endtime="20210831 20:24:39.701"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="root"]/div[2]/div[2]/div/div[2]/div</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:06:22.536" level="INFO">Clicking element '//*[@id="root"]/div[2]/div[2]/div/div[2]/div'.</msg>
-<status status="PASS" starttime="20210831 20:06:22.536" endtime="20210831 20:06:24.004"/>
+<msg timestamp="20210831 20:24:39.702" level="INFO">Clicking element '//*[@id="root"]/div[2]/div[2]/div/div[2]/div'.</msg>
+<status status="PASS" starttime="20210831 20:24:39.702" endtime="20210831 20:24:41.334"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210831 20:06:27.006" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20210831 20:06:24.004" endtime="20210831 20:06:27.006"/>
+<msg timestamp="20210831 20:24:44.336" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210831 20:24:41.335" endtime="20210831 20:24:44.337"/>
 </kw>
 <kw name="Switch Window" library="SeleniumLibrary">
 <arg>MetaMask Notification</arg>
 <doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" starttime="20210831 20:06:27.006" endtime="20210831 20:06:27.196"/>
+<status status="PASS" starttime="20210831 20:24:44.337" endtime="20210831 20:24:44.697"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="app-content"]/div/div[3]/div/div[2]/div[4]/div[2]/button[2]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:06:27.196" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/div[2]/div[4]/div[2]/button[2]'.</msg>
-<status status="PASS" starttime="20210831 20:06:27.196" endtime="20210831 20:06:27.290"/>
+<msg timestamp="20210831 20:24:44.698" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/div[2]/div[4]/div[2]/button[2]'.</msg>
+<status status="PASS" starttime="20210831 20:24:44.697" endtime="20210831 20:24:44.817"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="app-content"]/div/div[3]/div/div[2]/div[2]/div[2]/footer/button[2]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:06:27.291" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/div[2]/div[2]/div[2]/footer/button[2]'.</msg>
-<status status="PASS" starttime="20210831 20:06:27.290" endtime="20210831 20:06:27.457"/>
+<msg timestamp="20210831 20:24:44.818" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/div[2]/div[2]/div[2]/footer/button[2]'.</msg>
+<status status="PASS" starttime="20210831 20:24:44.817" endtime="20210831 20:24:45.012"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210831 20:06:30.460" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20210831 20:06:27.457" endtime="20210831 20:06:30.460"/>
+<msg timestamp="20210831 20:24:48.013" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210831 20:24:45.012" endtime="20210831 20:24:48.013"/>
 </kw>
 <kw name="Switch Window" library="SeleniumLibrary">
 <arg>Home Page | MonoX</arg>
 <doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" starttime="20210831 20:06:30.460" endtime="20210831 20:06:30.580"/>
+<status status="PASS" starttime="20210831 20:24:48.013" endtime="20210831 20:24:48.255"/>
 </kw>
-<status status="PASS" starttime="20210831 20:06:16.109" endtime="20210831 20:06:30.580"/>
+<status status="PASS" starttime="20210831 20:24:35.167" endtime="20210831 20:24:48.255"/>
 </kw>
-<status status="PASS" starttime="20210831 20:05:31.102" endtime="20210831 20:06:30.580"/>
+<status status="PASS" starttime="20210831 20:23:41.067" endtime="20210831 20:24:48.255"/>
 </kw>
 <kw name="Unwrap" library="Swap">
 <arg>WETH</arg>
@@ -1267,102 +1285,101 @@
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Swap</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20210831 20:06:30.593" level="INFO">Current page contains text 'Swap'.</msg>
-<status status="PASS" starttime="20210831 20:06:30.583" endtime="20210831 20:06:30.593"/>
+<msg timestamp="20210831 20:24:48.306" level="INFO">Current page contains text 'Swap'.</msg>
+<status status="PASS" starttime="20210831 20:24:48.260" endtime="20210831 20:24:48.306"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@href="/swap?network=kovan"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:06:30.594" level="INFO">Clicking element '//*[@href="/swap?network=kovan"]'.</msg>
-<status status="PASS" starttime="20210831 20:06:30.594" endtime="20210831 20:06:31.713"/>
+<msg timestamp="20210831 20:24:48.307" level="INFO">Clicking element '//*[@href="/swap?network=kovan"]'.</msg>
+<status status="PASS" starttime="20210831 20:24:48.307" endtime="20210831 20:24:49.757"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Swap</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20210831 20:06:32.800" level="INFO">Current page contains text 'Swap'.</msg>
-<status status="PASS" starttime="20210831 20:06:31.713" endtime="20210831 20:06:32.800"/>
+<msg timestamp="20210831 20:24:50.566" level="INFO">Current page contains text 'Swap'.</msg>
+<status status="PASS" starttime="20210831 20:24:49.758" endtime="20210831 20:24:50.566"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>Select your token for the price chart</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20210831 20:06:32.800" endtime="20210831 20:06:32.815"/>
+<status status="PASS" starttime="20210831 20:24:50.567" endtime="20210831 20:24:50.586"/>
 </kw>
-<status status="PASS" starttime="20210831 20:06:30.583" endtime="20210831 20:06:32.815"/>
+<status status="PASS" starttime="20210831 20:24:48.259" endtime="20210831 20:24:50.586"/>
 </kw>
 <kw name="Select From Token" library="Swap">
 <arg>${Token}</arg>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@data-testid='from-toggle']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:06:32.817" level="INFO">Clicking element '//*[@data-testid='from-toggle']'.</msg>
-<status status="PASS" starttime="20210831 20:06:32.816" endtime="20210831 20:06:34.108"/>
+<msg timestamp="20210831 20:24:50.588" level="INFO">Clicking element '//*[@data-testid='from-toggle']'.</msg>
+<status status="PASS" starttime="20210831 20:24:50.587" endtime="20210831 20:24:51.796"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id:searchInput</arg>
 <arg>${token}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210831 20:06:34.109" level="INFO">Typing text 'WETH' into text field 'id:searchInput'.</msg>
-<status status="PASS" starttime="20210831 20:06:34.108" endtime="20210831 20:06:34.518"/>
+<msg timestamp="20210831 20:24:51.796" level="INFO">Typing text 'WETH' into text field 'id:searchInput'.</msg>
+<status status="PASS" starttime="20210831 20:24:51.796" endtime="20210831 20:24:52.191"/>
 </kw>
 <kw name="Wait Until Element Contains" library="SeleniumLibrary">
 <arg>//*[@data-testid='currency-container-0']</arg>
 <arg>${token}</arg>
 <arg>10</arg>
 <doc>Waits until the element ``locator`` contains ``text``.</doc>
-<msg timestamp="20210831 20:06:35.745" level="INFO">Suppressing StaleElementReferenceException from Selenium.</msg>
-<status status="PASS" starttime="20210831 20:06:34.518" endtime="20210831 20:06:40.610"/>
+<status status="PASS" starttime="20210831 20:24:52.191" endtime="20210831 20:24:58.351"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@data-testid='currency-container-0']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:06:40.611" level="INFO">Clicking element '//*[@data-testid='currency-container-0']'.</msg>
-<status status="PASS" starttime="20210831 20:06:40.610" endtime="20210831 20:06:41.679"/>
+<msg timestamp="20210831 20:24:58.351" level="INFO">Clicking element '//*[@data-testid='currency-container-0']'.</msg>
+<status status="PASS" starttime="20210831 20:24:58.351" endtime="20210831 20:24:59.323"/>
 </kw>
-<status status="PASS" starttime="20210831 20:06:32.815" endtime="20210831 20:06:41.680"/>
+<status status="PASS" starttime="20210831 20:24:50.586" endtime="20210831 20:24:59.323"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>//*[@data-testid="from-toggle"]</arg>
 <arg>${Token}</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20210831 20:06:41.680" level="INFO">Verifying element '//*[@data-testid="from-toggle"]' contains exact text 'WETH'.</msg>
-<status status="PASS" starttime="20210831 20:06:41.680" endtime="20210831 20:06:41.719"/>
+<msg timestamp="20210831 20:24:59.324" level="INFO">Verifying element '//*[@data-testid="from-toggle"]' contains exact text 'WETH'.</msg>
+<status status="PASS" starttime="20210831 20:24:59.324" endtime="20210831 20:24:59.458"/>
 </kw>
 <kw name="Select To Token" library="Swap">
 <arg>ETH</arg>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@data-testid='to-toggle']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:06:41.719" level="INFO">Clicking element '//*[@data-testid='to-toggle']'.</msg>
-<status status="PASS" starttime="20210831 20:06:41.719" endtime="20210831 20:06:41.787"/>
+<msg timestamp="20210831 20:24:59.459" level="INFO">Clicking element '//*[@data-testid='to-toggle']'.</msg>
+<status status="PASS" starttime="20210831 20:24:59.459" endtime="20210831 20:24:59.613"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id:searchInput</arg>
 <arg>${token}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210831 20:06:41.788" level="INFO">Typing text 'ETH' into text field 'id:searchInput'.</msg>
-<status status="PASS" starttime="20210831 20:06:41.787" endtime="20210831 20:06:41.984"/>
+<msg timestamp="20210831 20:24:59.614" level="INFO">Typing text 'ETH' into text field 'id:searchInput'.</msg>
+<status status="PASS" starttime="20210831 20:24:59.614" endtime="20210831 20:24:59.726"/>
 </kw>
 <kw name="Wait Until Element Contains" library="SeleniumLibrary">
 <arg>//*[@data-testid='currency-container-0']</arg>
 <arg>${token}</arg>
 <arg>10</arg>
 <doc>Waits until the element ``locator`` contains ``text``.</doc>
-<status status="PASS" starttime="20210831 20:06:41.984" endtime="20210831 20:06:45.001"/>
+<status status="PASS" starttime="20210831 20:24:59.726" endtime="20210831 20:25:02.672"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@data-testid='currency-container-0']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:06:45.001" level="INFO">Clicking element '//*[@data-testid='currency-container-0']'.</msg>
-<status status="PASS" starttime="20210831 20:06:45.001" endtime="20210831 20:06:45.669"/>
+<msg timestamp="20210831 20:25:02.673" level="INFO">Clicking element '//*[@data-testid='currency-container-0']'.</msg>
+<status status="PASS" starttime="20210831 20:25:02.672" endtime="20210831 20:25:03.303"/>
 </kw>
-<status status="PASS" starttime="20210831 20:06:41.719" endtime="20210831 20:06:45.669"/>
+<status status="PASS" starttime="20210831 20:24:59.458" endtime="20210831 20:25:03.303"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>//*[@data-testid="to-toggle"]</arg>
 <arg>ETH</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20210831 20:06:45.670" level="INFO">Verifying element '//*[@data-testid="to-toggle"]' contains exact text 'ETH'.</msg>
-<status status="PASS" starttime="20210831 20:06:45.669" endtime="20210831 20:06:45.758"/>
+<msg timestamp="20210831 20:25:03.304" level="INFO">Verifying element '//*[@data-testid="to-toggle"]' contains exact text 'ETH'.</msg>
+<status status="PASS" starttime="20210831 20:25:03.303" endtime="20210831 20:25:03.413"/>
 </kw>
 <kw name="Fill From Token Amount" library="Swap">
 <arg>${Amount}</arg>
@@ -1370,10 +1387,10 @@
 <arg>//*[@data-testid='from-price-input']</arg>
 <arg>${amount}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210831 20:06:45.759" level="INFO">Typing text '0.008' into text field '//*[@data-testid='from-price-input']'.</msg>
-<status status="PASS" starttime="20210831 20:06:45.759" endtime="20210831 20:06:46.175"/>
+<msg timestamp="20210831 20:25:03.414" level="INFO">Typing text '0.008' into text field '//*[@data-testid='from-price-input']'.</msg>
+<status status="PASS" starttime="20210831 20:25:03.413" endtime="20210831 20:25:04.265"/>
 </kw>
-<status status="PASS" starttime="20210831 20:06:45.758" endtime="20210831 20:06:46.176"/>
+<status status="PASS" starttime="20210831 20:25:03.413" endtime="20210831 20:25:04.265"/>
 </kw>
 <kw name="Confirm" library="Swap">
 <arg>Unwrap</arg>
@@ -1381,69 +1398,69 @@
 <arg>//*[@id="root"]/div/div[3]/div[1]/div[2]/div[1]/div[1]/div[2]/div[7]/div[1]</arg>
 <arg>${Transaction}</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20210831 20:06:46.177" level="INFO">Verifying element '//*[@id="root"]/div/div[3]/div[1]/div[2]/div[1]/div[1]/div[2]/div[7]/div[1]' contains exact text 'Unwrap'.</msg>
-<status status="PASS" starttime="20210831 20:06:46.177" endtime="20210831 20:06:46.198"/>
+<msg timestamp="20210831 20:25:04.267" level="INFO">Verifying element '//*[@id="root"]/div/div[3]/div[1]/div[2]/div[1]/div[1]/div[2]/div[7]/div[1]' contains exact text 'Unwrap'.</msg>
+<status status="PASS" starttime="20210831 20:25:04.267" endtime="20210831 20:25:04.283"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="root"]/div/div[3]/div[1]/div[2]/div[1]/div[1]/div[2]/div[7]/div[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:06:46.198" level="INFO">Clicking element '//*[@id="root"]/div/div[3]/div[1]/div[2]/div[1]/div[1]/div[2]/div[7]/div[1]'.</msg>
-<status status="PASS" starttime="20210831 20:06:46.198" endtime="20210831 20:06:46.389"/>
+<msg timestamp="20210831 20:25:04.284" level="INFO">Clicking element '//*[@id="root"]/div/div[3]/div[1]/div[2]/div[1]/div[1]/div[2]/div[7]/div[1]'.</msg>
+<status status="PASS" starttime="20210831 20:25:04.284" endtime="20210831 20:25:04.408"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>//*[@id="root"]/div[2]/div[2]/div/div[8]/div[1]</arg>
 <arg>Confirm ${Transaction}</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20210831 20:06:46.390" level="INFO">Verifying element '//*[@id="root"]/div[2]/div[2]/div/div[8]/div[1]' contains exact text 'Confirm Unwrap'.</msg>
+<msg timestamp="20210831 20:25:04.409" level="INFO">Verifying element '//*[@id="root"]/div[2]/div[2]/div/div[8]/div[1]' contains exact text 'Confirm Unwrap'.</msg>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20210831 20:06:48.002" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-47.png"&gt;&lt;img src="selenium-screenshot-47.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20210831 20:06:46.411" endtime="20210831 20:06:48.002"/>
+<msg timestamp="20210831 20:25:06.037" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-47.png"&gt;&lt;img src="selenium-screenshot-47.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210831 20:25:04.421" endtime="20210831 20:25:06.037"/>
 </kw>
-<msg timestamp="20210831 20:06:48.013" level="FAIL">Element with locator '//*[@id="root"]/div[2]/div[2]/div/div[8]/div[1]' not found.</msg>
-<status status="FAIL" starttime="20210831 20:06:46.389" endtime="20210831 20:06:48.013"/>
+<msg timestamp="20210831 20:25:06.047" level="FAIL">Element with locator '//*[@id="root"]/div[2]/div[2]/div/div[8]/div[1]' not found.</msg>
+<status status="FAIL" starttime="20210831 20:25:04.408" endtime="20210831 20:25:06.047"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="root"]/div[2]/div[2]/div/div[8]/div[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20210831 20:06:48.013" endtime="20210831 20:06:48.014"/>
+<status status="NOT RUN" starttime="20210831 20:25:06.048" endtime="20210831 20:25:06.048"/>
 </kw>
-<status status="FAIL" starttime="20210831 20:06:46.176" endtime="20210831 20:06:48.014"/>
+<status status="FAIL" starttime="20210831 20:25:04.266" endtime="20210831 20:25:06.049"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20210831 20:06:48.014" endtime="20210831 20:06:48.014"/>
+<status status="NOT RUN" starttime="20210831 20:25:06.049" endtime="20210831 20:25:06.049"/>
 </kw>
 <kw name="Switch Window" library="SeleniumLibrary">
 <arg>MetaMask Notification</arg>
 <doc>Switches to browser window matching ``locator``.</doc>
-<status status="NOT RUN" starttime="20210831 20:06:48.014" endtime="20210831 20:06:48.014"/>
+<status status="NOT RUN" starttime="20210831 20:25:06.049" endtime="20210831 20:25:06.049"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@data-testid="page-container-footer-next"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20210831 20:06:48.014" endtime="20210831 20:06:48.015"/>
+<status status="NOT RUN" starttime="20210831 20:25:06.049" endtime="20210831 20:25:06.049"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20210831 20:06:48.015" endtime="20210831 20:06:48.015"/>
+<status status="NOT RUN" starttime="20210831 20:25:06.049" endtime="20210831 20:25:06.049"/>
 </kw>
 <kw name="Close Transaction Submit Modal" library="Swap">
 <arg>ETH</arg>
-<status status="NOT RUN" starttime="20210831 20:06:48.015" endtime="20210831 20:06:48.015"/>
+<status status="NOT RUN" starttime="20210831 20:25:06.050" endtime="20210831 20:25:06.050"/>
 </kw>
-<status status="FAIL" starttime="20210831 20:06:30.582" endtime="20210831 20:06:48.016"/>
+<status status="FAIL" starttime="20210831 20:24:48.257" endtime="20210831 20:25:06.050"/>
 </kw>
 <kw name="Closing Browser" library="CommonFunctionalities" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20210831 20:06:48.017" endtime="20210831 20:06:48.245"/>
+<status status="PASS" starttime="20210831 20:25:06.051" endtime="20210831 20:25:06.238"/>
 </kw>
-<status status="PASS" starttime="20210831 20:06:48.016" endtime="20210831 20:06:48.245"/>
+<status status="PASS" starttime="20210831 20:25:06.051" endtime="20210831 20:25:06.239"/>
 </kw>
-<status status="FAIL" starttime="20210831 20:05:31.101" endtime="20210831 20:06:48.245">Element with locator '//*[@id="root"]/div[2]/div[2]/div/div[8]/div[1]' not found.</status>
+<status status="FAIL" starttime="20210831 20:23:41.066" endtime="20210831 20:25:06.239">Element with locator '//*[@id="root"]/div[2]/div[2]/div/div[8]/div[1]' not found.</status>
 </test>
 <test id="s1-t4" name="KOVAN - Wrap - ETH">
 <kw name="Connect MetaMask Wallet" library="CommonFunctionalities" type="SETUP">
@@ -1453,252 +1470,252 @@
 <arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
 <arg>sys, selenium.webdriver</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20210831 20:06:48.249" level="INFO">${ChromeOptions} = &lt;selenium.webdriver.chrome.options.Options object at 0x10f0f2c70&gt;</msg>
-<status status="PASS" starttime="20210831 20:06:48.249" endtime="20210831 20:06:48.249"/>
+<msg timestamp="20210831 20:25:06.244" level="INFO">${ChromeOptions} = &lt;selenium.webdriver.chrome.options.Options object at 0x10b407670&gt;</msg>
+<status status="PASS" starttime="20210831 20:25:06.243" endtime="20210831 20:25:06.244"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${ChromeOptions}</arg>
 <arg>add_extension</arg>
 <arg>/Users/metoinside/Documents/qntism/monox-automation/initialAutomation/Resources/Plugins/MetaMask_v10.0.3.crx</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" starttime="20210831 20:06:48.249" endtime="20210831 20:06:48.249"/>
+<status status="PASS" starttime="20210831 20:25:06.244" endtime="20210831 20:25:06.244"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <var>${Options}</var>
 <arg>${ChromeOptions}</arg>
 <arg>to_capabilities</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<msg timestamp="20210831 20:06:48.415" level="INFO">${Options} = {'browserName': 'chrome', 'version': '', 'platform': 'ANY', 'goog:chromeOptions': {'extensions': ['Q3IyNAMAAAAdBQAAEqwECqYCMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAj/u/XDdjlDyw7gHEtaaasZ9GdG8WOKAyJ...</msg>
-<status status="PASS" starttime="20210831 20:06:48.250" endtime="20210831 20:06:48.415"/>
+<msg timestamp="20210831 20:25:06.550" level="INFO">${Options} = {'browserName': 'chrome', 'version': '', 'platform': 'ANY', 'goog:chromeOptions': {'extensions': ['Q3IyNAMAAAAdBQAAEqwECqYCMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAj/u/XDdjlDyw7gHEtaaasZ9GdG8WOKAyJ...</msg>
+<status status="PASS" starttime="20210831 20:25:06.244" endtime="20210831 20:25:06.550"/>
 </kw>
 <kw name="Create Webdriver" library="SeleniumLibrary">
 <arg>Chrome</arg>
 <arg>desired_capabilities=${Options}</arg>
 <doc>Creates an instance of Selenium WebDriver.</doc>
-<msg timestamp="20210831 20:06:48.416" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
-<status status="PASS" starttime="20210831 20:06:48.416" endtime="20210831 20:06:57.355"/>
+<msg timestamp="20210831 20:25:06.550" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20210831 20:25:06.550" endtime="20210831 20:25:15.600"/>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>https://dev.monox.finance</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20210831 20:06:57.356" level="INFO">Opening url 'https://dev.monox.finance'</msg>
-<status status="PASS" starttime="20210831 20:06:57.356" endtime="20210831 20:07:16.086"/>
+<msg timestamp="20210831 20:25:15.600" level="INFO">Opening url 'https://dev.monox.finance'</msg>
+<status status="PASS" starttime="20210831 20:25:15.600" endtime="20210831 20:25:34.329"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20210831 20:07:16.086" endtime="20210831 20:07:16.414"/>
+<status status="PASS" starttime="20210831 20:25:34.329" endtime="20210831 20:25:34.584"/>
 </kw>
-<status status="PASS" starttime="20210831 20:06:48.246" endtime="20210831 20:07:16.414"/>
+<status status="PASS" starttime="20210831 20:25:06.240" endtime="20210831 20:25:34.585"/>
 </kw>
 <kw name="Import MetaMask Wallet" library="CommonFunctionalities">
 <kw name="Switch Window" library="SeleniumLibrary">
 <arg>MetaMask</arg>
 <doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" starttime="20210831 20:07:16.415" endtime="20210831 20:07:16.484"/>
+<status status="PASS" starttime="20210831 20:25:34.586" endtime="20210831 20:25:34.716"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210831 20:07:18.486" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20210831 20:07:16.484" endtime="20210831 20:07:18.486"/>
+<msg timestamp="20210831 20:25:36.719" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210831 20:25:34.716" endtime="20210831 20:25:36.720"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="app-content"]/div/div[3]/div/div/div/button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:07:18.488" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/div/div/button'.</msg>
-<status status="PASS" starttime="20210831 20:07:18.487" endtime="20210831 20:07:20.472"/>
+<msg timestamp="20210831 20:25:36.722" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/div/div/button'.</msg>
+<status status="PASS" starttime="20210831 20:25:36.720" endtime="20210831 20:25:38.771"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210831 20:07:21.477" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20210831 20:07:20.472" endtime="20210831 20:07:21.478"/>
+<msg timestamp="20210831 20:25:39.774" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210831 20:25:38.772" endtime="20210831 20:25:39.775"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="app-content"]/div/div[3]/div/div/div[2]/div/div[2]/div[1]/button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:07:21.478" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/div/div[2]/div/div[2]/div[1]/button'.</msg>
-<status status="PASS" starttime="20210831 20:07:21.478" endtime="20210831 20:07:21.827"/>
+<msg timestamp="20210831 20:25:39.778" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/div/div[2]/div/div[2]/div[1]/button'.</msg>
+<status status="PASS" starttime="20210831 20:25:39.775" endtime="20210831 20:25:40.335"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210831 20:07:22.830" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20210831 20:07:21.827" endtime="20210831 20:07:22.830"/>
+<msg timestamp="20210831 20:25:41.337" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210831 20:25:40.335" endtime="20210831 20:25:41.338"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="app-content"]/div/div[3]/div/div/div/div[5]/div[1]/footer/button[2]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:07:22.832" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/div/div/div[5]/div[1]/footer/button[2]'.</msg>
-<status status="PASS" starttime="20210831 20:07:22.831" endtime="20210831 20:07:23.152"/>
+<msg timestamp="20210831 20:25:41.340" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/div/div/div[5]/div[1]/footer/button[2]'.</msg>
+<status status="PASS" starttime="20210831 20:25:41.338" endtime="20210831 20:25:41.693"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210831 20:07:24.155" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20210831 20:07:23.152" endtime="20210831 20:07:24.155"/>
+<msg timestamp="20210831 20:25:42.695" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210831 20:25:41.693" endtime="20210831 20:25:42.695"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//*[@id="app-content"]/div/div[3]/div/div/form/div[4]/div[1]/div/input</arg>
 <arg>month foam ostrich boil negative border absorb swap metal tooth wise coconut</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210831 20:07:24.156" level="INFO">Typing text 'month foam ostrich boil negative border absorb swap metal tooth wise coconut' into text field '//*[@id="app-content"]/div/div[3]/div/div/form/div[4]/div[1]/div/input'.</msg>
-<status status="PASS" starttime="20210831 20:07:24.156" endtime="20210831 20:07:26.536"/>
+<msg timestamp="20210831 20:25:42.697" level="INFO">Typing text 'month foam ostrich boil negative border absorb swap metal tooth wise coconut' into text field '//*[@id="app-content"]/div/div[3]/div/div/form/div[4]/div[1]/div/input'.</msg>
+<status status="PASS" starttime="20210831 20:25:42.696" endtime="20210831 20:25:45.858"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210831 20:07:27.538" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20210831 20:07:26.536" endtime="20210831 20:07:27.540"/>
+<msg timestamp="20210831 20:25:46.859" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210831 20:25:45.858" endtime="20210831 20:25:46.859"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//*[@id="password"]</arg>
 <arg>Asdf1234</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210831 20:07:27.541" level="INFO">Typing text 'Asdf1234' into text field '//*[@id="password"]'.</msg>
-<status status="PASS" starttime="20210831 20:07:27.540" endtime="20210831 20:07:28.314"/>
+<msg timestamp="20210831 20:25:46.859" level="INFO">Typing text 'Asdf1234' into text field '//*[@id="password"]'.</msg>
+<status status="PASS" starttime="20210831 20:25:46.859" endtime="20210831 20:25:47.755"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//*[@id="confirm-password"]</arg>
 <arg>Asdf1234</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210831 20:07:28.315" level="INFO">Typing text 'Asdf1234' into text field '//*[@id="confirm-password"]'.</msg>
-<status status="PASS" starttime="20210831 20:07:28.315" endtime="20210831 20:07:28.400"/>
+<msg timestamp="20210831 20:25:47.756" level="INFO">Typing text 'Asdf1234' into text field '//*[@id="confirm-password"]'.</msg>
+<status status="PASS" starttime="20210831 20:25:47.755" endtime="20210831 20:25:47.923"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="app-content"]/div/div[3]/div/div/form/div[7]/div</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:07:28.400" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/div/form/div[7]/div'.</msg>
-<status status="PASS" starttime="20210831 20:07:28.400" endtime="20210831 20:07:29.423"/>
+<msg timestamp="20210831 20:25:47.923" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/div/form/div[7]/div'.</msg>
+<status status="PASS" starttime="20210831 20:25:47.923" endtime="20210831 20:25:49.375"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210831 20:07:30.425" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20210831 20:07:29.424" endtime="20210831 20:07:30.426"/>
+<msg timestamp="20210831 20:25:50.376" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210831 20:25:49.375" endtime="20210831 20:25:50.376"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="app-content"]/div/div[3]/div/div/form/button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:07:30.427" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/div/form/button'.</msg>
-<status status="PASS" starttime="20210831 20:07:30.426" endtime="20210831 20:07:30.746"/>
+<msg timestamp="20210831 20:25:50.376" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/div/form/button'.</msg>
+<status status="PASS" starttime="20210831 20:25:50.376" endtime="20210831 20:25:50.830"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210831 20:07:31.751" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20210831 20:07:30.746" endtime="20210831 20:07:31.751"/>
+<msg timestamp="20210831 20:25:51.832" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210831 20:25:50.830" endtime="20210831 20:25:51.832"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//*[@id="app-content"]/div/div[3]/div/div/button</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210831 20:07:31.751" endtime="20210831 20:07:32.908"/>
+<status status="PASS" starttime="20210831 20:25:51.833" endtime="20210831 20:25:53.715"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>//*[@id="app-content"]/div/div[3]/div/div/button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20210831 20:07:32.908" level="INFO">Clicking button '//*[@id="app-content"]/div/div[3]/div/div/button'.</msg>
-<status status="PASS" starttime="20210831 20:07:32.908" endtime="20210831 20:07:33.228"/>
+<msg timestamp="20210831 20:25:53.715" level="INFO">Clicking button '//*[@id="app-content"]/div/div[3]/div/div/button'.</msg>
+<status status="PASS" starttime="20210831 20:25:53.715" endtime="20210831 20:25:53.878"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="popover-content"]/div/div/section/header/div/button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:07:33.228" level="INFO">Clicking element '//*[@id="popover-content"]/div/div/section/header/div/button'.</msg>
-<status status="PASS" starttime="20210831 20:07:33.228" endtime="20210831 20:07:34.829"/>
+<msg timestamp="20210831 20:25:53.879" level="INFO">Clicking element '//*[@id="popover-content"]/div/div/section/header/div/button'.</msg>
+<status status="PASS" starttime="20210831 20:25:53.879" endtime="20210831 20:25:55.691"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210831 20:07:35.830" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20210831 20:07:34.830" endtime="20210831 20:07:35.831"/>
+<msg timestamp="20210831 20:25:56.694" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210831 20:25:55.692" endtime="20210831 20:25:56.694"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="app-content"]/div/div[1]/div/div[2]/div[1]/div</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:07:35.833" level="INFO">Clicking element '//*[@id="app-content"]/div/div[1]/div/div[2]/div[1]/div'.</msg>
-<status status="PASS" starttime="20210831 20:07:35.831" endtime="20210831 20:07:36.162"/>
+<msg timestamp="20210831 20:25:56.696" level="INFO">Clicking element '//*[@id="app-content"]/div/div[1]/div/div[2]/div[1]/div'.</msg>
+<status status="PASS" starttime="20210831 20:25:56.695" endtime="20210831 20:25:57.022"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="app-content"]/div/div[3]/div/li[3]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:07:36.163" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/li[3]'.</msg>
-<status status="PASS" starttime="20210831 20:07:36.163" endtime="20210831 20:07:36.356"/>
+<msg timestamp="20210831 20:25:57.022" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/li[3]'.</msg>
+<status status="PASS" starttime="20210831 20:25:57.022" endtime="20210831 20:25:57.249"/>
 </kw>
-<status status="PASS" starttime="20210831 20:07:16.415" endtime="20210831 20:07:36.356"/>
+<status status="PASS" starttime="20210831 20:25:34.585" endtime="20210831 20:25:57.249"/>
 </kw>
 <kw name="Complete Integration" library="CommonFunctionalities">
 <kw name="Switch Window" library="SeleniumLibrary">
 <arg>Home Page | MonoX</arg>
 <doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" starttime="20210831 20:07:36.357" endtime="20210831 20:07:38.289"/>
+<status status="PASS" starttime="20210831 20:25:57.250" endtime="20210831 20:25:59.302"/>
 </kw>
 <kw name="Page Should Contain Button" library="SeleniumLibrary">
 <arg>Connect Wallet</arg>
 <doc>Verifies button ``locator`` is found from current page.</doc>
-<msg timestamp="20210831 20:07:38.673" level="INFO">Current page contains button 'Connect Wallet'.</msg>
-<status status="PASS" starttime="20210831 20:07:38.289" endtime="20210831 20:07:38.673"/>
+<msg timestamp="20210831 20:25:59.957" level="INFO">Current page contains button 'Connect Wallet'.</msg>
+<status status="PASS" starttime="20210831 20:25:59.303" endtime="20210831 20:25:59.957"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>Connect Wallet</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20210831 20:07:38.673" level="INFO">Clicking button 'Connect Wallet'.</msg>
-<status status="PASS" starttime="20210831 20:07:38.673" endtime="20210831 20:07:40.712"/>
+<msg timestamp="20210831 20:25:59.958" level="INFO">Clicking button 'Connect Wallet'.</msg>
+<status status="PASS" starttime="20210831 20:25:59.957" endtime="20210831 20:26:02.545"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210831 20:07:41.714" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20210831 20:07:40.713" endtime="20210831 20:07:41.714"/>
+<msg timestamp="20210831 20:26:03.549" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210831 20:26:02.546" endtime="20210831 20:26:03.549"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Connect MetaMask Wallet</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20210831 20:07:41.755" level="INFO">Current page contains text 'Connect MetaMask Wallet'.</msg>
-<status status="PASS" starttime="20210831 20:07:41.715" endtime="20210831 20:07:41.755"/>
+<msg timestamp="20210831 20:26:03.586" level="INFO">Current page contains text 'Connect MetaMask Wallet'.</msg>
+<status status="PASS" starttime="20210831 20:26:03.549" endtime="20210831 20:26:03.586"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="root"]/div[2]/div[2]/div/div[2]/div</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:07:41.755" level="INFO">Clicking element '//*[@id="root"]/div[2]/div[2]/div/div[2]/div'.</msg>
-<status status="PASS" starttime="20210831 20:07:41.755" endtime="20210831 20:07:43.177"/>
+<msg timestamp="20210831 20:26:03.587" level="INFO">Clicking element '//*[@id="root"]/div[2]/div[2]/div/div[2]/div'.</msg>
+<status status="PASS" starttime="20210831 20:26:03.586" endtime="20210831 20:26:05.210"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210831 20:07:46.178" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20210831 20:07:43.178" endtime="20210831 20:07:46.178"/>
+<msg timestamp="20210831 20:26:08.211" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210831 20:26:05.210" endtime="20210831 20:26:08.211"/>
 </kw>
 <kw name="Switch Window" library="SeleniumLibrary">
 <arg>MetaMask Notification</arg>
 <doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" starttime="20210831 20:07:46.179" endtime="20210831 20:07:46.385"/>
+<status status="PASS" starttime="20210831 20:26:08.211" endtime="20210831 20:26:08.431"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="app-content"]/div/div[3]/div/div[2]/div[4]/div[2]/button[2]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:07:46.385" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/div[2]/div[4]/div[2]/button[2]'.</msg>
-<status status="PASS" starttime="20210831 20:07:46.385" endtime="20210831 20:07:46.470"/>
+<msg timestamp="20210831 20:26:08.432" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/div[2]/div[4]/div[2]/button[2]'.</msg>
+<status status="PASS" starttime="20210831 20:26:08.432" endtime="20210831 20:26:08.549"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="app-content"]/div/div[3]/div/div[2]/div[2]/div[2]/footer/button[2]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:07:46.471" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/div[2]/div[2]/div[2]/footer/button[2]'.</msg>
-<status status="PASS" starttime="20210831 20:07:46.470" endtime="20210831 20:07:46.622"/>
+<msg timestamp="20210831 20:26:08.549" level="INFO">Clicking element '//*[@id="app-content"]/div/div[3]/div/div[2]/div[2]/div[2]/footer/button[2]'.</msg>
+<status status="PASS" starttime="20210831 20:26:08.549" endtime="20210831 20:26:08.714"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210831 20:07:49.626" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20210831 20:07:46.622" endtime="20210831 20:07:49.626"/>
+<msg timestamp="20210831 20:26:11.716" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210831 20:26:08.714" endtime="20210831 20:26:11.717"/>
 </kw>
 <kw name="Switch Window" library="SeleniumLibrary">
 <arg>Home Page | MonoX</arg>
 <doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" starttime="20210831 20:07:49.626" endtime="20210831 20:07:49.740"/>
+<status status="PASS" starttime="20210831 20:26:11.717" endtime="20210831 20:26:11.875"/>
 </kw>
-<status status="PASS" starttime="20210831 20:07:36.356" endtime="20210831 20:07:49.740"/>
+<status status="PASS" starttime="20210831 20:25:57.249" endtime="20210831 20:26:11.875"/>
 </kw>
-<status status="PASS" starttime="20210831 20:06:48.246" endtime="20210831 20:07:49.740"/>
+<status status="PASS" starttime="20210831 20:25:06.240" endtime="20210831 20:26:11.875"/>
 </kw>
 <kw name="Wrap" library="Swap">
 <arg>ETH</arg>
@@ -1707,101 +1724,101 @@
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Swap</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20210831 20:07:49.756" level="INFO">Current page contains text 'Swap'.</msg>
-<status status="PASS" starttime="20210831 20:07:49.742" endtime="20210831 20:07:49.756"/>
+<msg timestamp="20210831 20:26:11.922" level="INFO">Current page contains text 'Swap'.</msg>
+<status status="PASS" starttime="20210831 20:26:11.877" endtime="20210831 20:26:11.922"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@href="/swap?network=kovan"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:07:49.756" level="INFO">Clicking element '//*[@href="/swap?network=kovan"]'.</msg>
-<status status="PASS" starttime="20210831 20:07:49.756" endtime="20210831 20:07:50.841"/>
+<msg timestamp="20210831 20:26:11.923" level="INFO">Clicking element '//*[@href="/swap?network=kovan"]'.</msg>
+<status status="PASS" starttime="20210831 20:26:11.923" endtime="20210831 20:26:13.151"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Swap</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20210831 20:07:51.063" level="INFO">Current page contains text 'Swap'.</msg>
-<status status="PASS" starttime="20210831 20:07:50.841" endtime="20210831 20:07:51.063"/>
+<msg timestamp="20210831 20:26:13.366" level="INFO">Current page contains text 'Swap'.</msg>
+<status status="PASS" starttime="20210831 20:26:13.152" endtime="20210831 20:26:13.366"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>Select your token for the price chart</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20210831 20:07:51.063" endtime="20210831 20:07:52.119"/>
+<status status="PASS" starttime="20210831 20:26:13.366" endtime="20210831 20:26:14.599"/>
 </kw>
-<status status="PASS" starttime="20210831 20:07:49.741" endtime="20210831 20:07:52.119"/>
+<status status="PASS" starttime="20210831 20:26:11.876" endtime="20210831 20:26:14.599"/>
 </kw>
 <kw name="Select From Token" library="Swap">
 <arg>${Token}</arg>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@data-testid='from-toggle']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:07:52.120" level="INFO">Clicking element '//*[@data-testid='from-toggle']'.</msg>
-<status status="PASS" starttime="20210831 20:07:52.120" endtime="20210831 20:07:53.356"/>
+<msg timestamp="20210831 20:26:14.600" level="INFO">Clicking element '//*[@data-testid='from-toggle']'.</msg>
+<status status="PASS" starttime="20210831 20:26:14.600" endtime="20210831 20:26:15.981"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id:searchInput</arg>
 <arg>${token}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210831 20:07:53.357" level="INFO">Typing text 'ETH' into text field 'id:searchInput'.</msg>
-<status status="PASS" starttime="20210831 20:07:53.357" endtime="20210831 20:07:53.903"/>
+<msg timestamp="20210831 20:26:15.982" level="INFO">Typing text 'ETH' into text field 'id:searchInput'.</msg>
+<status status="PASS" starttime="20210831 20:26:15.982" endtime="20210831 20:26:16.423"/>
 </kw>
 <kw name="Wait Until Element Contains" library="SeleniumLibrary">
 <arg>//*[@data-testid='currency-container-0']</arg>
 <arg>${token}</arg>
 <arg>10</arg>
 <doc>Waits until the element ``locator`` contains ``text``.</doc>
-<status status="PASS" starttime="20210831 20:07:53.903" endtime="20210831 20:07:59.809"/>
+<status status="PASS" starttime="20210831 20:26:16.423" endtime="20210831 20:26:22.158"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@data-testid='currency-container-0']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:07:59.810" level="INFO">Clicking element '//*[@data-testid='currency-container-0']'.</msg>
-<status status="PASS" starttime="20210831 20:07:59.809" endtime="20210831 20:08:00.893"/>
+<msg timestamp="20210831 20:26:22.159" level="INFO">Clicking element '//*[@data-testid='currency-container-0']'.</msg>
+<status status="PASS" starttime="20210831 20:26:22.159" endtime="20210831 20:26:23.293"/>
 </kw>
-<status status="PASS" starttime="20210831 20:07:52.119" endtime="20210831 20:08:00.894"/>
+<status status="PASS" starttime="20210831 20:26:14.600" endtime="20210831 20:26:23.293"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>//*[@data-testid="from-toggle"]</arg>
 <arg>${Token}</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20210831 20:08:00.894" level="INFO">Verifying element '//*[@data-testid="from-toggle"]' contains exact text 'ETH'.</msg>
-<status status="PASS" starttime="20210831 20:08:00.894" endtime="20210831 20:08:01.945"/>
+<msg timestamp="20210831 20:26:23.294" level="INFO">Verifying element '//*[@data-testid="from-toggle"]' contains exact text 'ETH'.</msg>
+<status status="PASS" starttime="20210831 20:26:23.293" endtime="20210831 20:26:23.433"/>
 </kw>
 <kw name="Select To Token" library="Swap">
 <arg>WETH</arg>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@data-testid='to-toggle']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:08:01.946" level="INFO">Clicking element '//*[@data-testid='to-toggle']'.</msg>
-<status status="PASS" starttime="20210831 20:08:01.946" endtime="20210831 20:08:02.070"/>
+<msg timestamp="20210831 20:26:23.434" level="INFO">Clicking element '//*[@data-testid='to-toggle']'.</msg>
+<status status="PASS" starttime="20210831 20:26:23.434" endtime="20210831 20:26:23.528"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id:searchInput</arg>
 <arg>${token}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210831 20:08:02.070" level="INFO">Typing text 'WETH' into text field 'id:searchInput'.</msg>
-<status status="PASS" starttime="20210831 20:08:02.070" endtime="20210831 20:08:02.157"/>
+<msg timestamp="20210831 20:26:23.528" level="INFO">Typing text 'WETH' into text field 'id:searchInput'.</msg>
+<status status="PASS" starttime="20210831 20:26:23.528" endtime="20210831 20:26:23.632"/>
 </kw>
 <kw name="Wait Until Element Contains" library="SeleniumLibrary">
 <arg>//*[@data-testid='currency-container-0']</arg>
 <arg>${token}</arg>
 <arg>10</arg>
 <doc>Waits until the element ``locator`` contains ``text``.</doc>
-<status status="PASS" starttime="20210831 20:08:02.157" endtime="20210831 20:08:05.295"/>
+<status status="PASS" starttime="20210831 20:26:23.632" endtime="20210831 20:26:26.723"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@data-testid='currency-container-0']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:08:05.296" level="INFO">Clicking element '//*[@data-testid='currency-container-0']'.</msg>
-<status status="PASS" starttime="20210831 20:08:05.296" endtime="20210831 20:08:05.895"/>
+<msg timestamp="20210831 20:26:26.723" level="INFO">Clicking element '//*[@data-testid='currency-container-0']'.</msg>
+<status status="PASS" starttime="20210831 20:26:26.723" endtime="20210831 20:26:26.979"/>
 </kw>
-<status status="PASS" starttime="20210831 20:08:01.945" endtime="20210831 20:08:05.895"/>
+<status status="PASS" starttime="20210831 20:26:23.433" endtime="20210831 20:26:26.979"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>//*[@data-testid="to-toggle"]</arg>
 <arg>WETH</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20210831 20:08:05.896" level="INFO">Verifying element '//*[@data-testid="to-toggle"]' contains exact text 'WETH'.</msg>
-<status status="PASS" starttime="20210831 20:08:05.895" endtime="20210831 20:08:06.029"/>
+<msg timestamp="20210831 20:26:26.979" level="INFO">Verifying element '//*[@data-testid="to-toggle"]' contains exact text 'WETH'.</msg>
+<status status="PASS" starttime="20210831 20:26:26.979" endtime="20210831 20:26:27.110"/>
 </kw>
 <kw name="Fill From Token Amount" library="Swap">
 <arg>${Amount}</arg>
@@ -1809,10 +1826,10 @@
 <arg>//*[@data-testid='from-price-input']</arg>
 <arg>${amount}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210831 20:08:06.029" level="INFO">Typing text '0.003' into text field '//*[@data-testid='from-price-input']'.</msg>
-<status status="PASS" starttime="20210831 20:08:06.029" endtime="20210831 20:08:06.437"/>
+<msg timestamp="20210831 20:26:27.111" level="INFO">Typing text '0.003' into text field '//*[@data-testid='from-price-input']'.</msg>
+<status status="PASS" starttime="20210831 20:26:27.110" endtime="20210831 20:26:28.072"/>
 </kw>
-<status status="PASS" starttime="20210831 20:08:06.029" endtime="20210831 20:08:06.437"/>
+<status status="PASS" starttime="20210831 20:26:27.110" endtime="20210831 20:26:28.072"/>
 </kw>
 <kw name="Confirm" library="Swap">
 <arg>Wrap</arg>
@@ -1820,82 +1837,91 @@
 <arg>//*[@id="root"]/div/div[3]/div[1]/div[2]/div[1]/div[1]/div[2]/div[7]/div[1]</arg>
 <arg>${Transaction}</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20210831 20:08:06.438" level="INFO">Verifying element '//*[@id="root"]/div/div[3]/div[1]/div[2]/div[1]/div[1]/div[2]/div[7]/div[1]' contains exact text 'Wrap'.</msg>
-<status status="PASS" starttime="20210831 20:08:06.438" endtime="20210831 20:08:06.455"/>
+<msg timestamp="20210831 20:26:28.073" level="INFO">Verifying element '//*[@id="root"]/div/div[3]/div[1]/div[2]/div[1]/div[1]/div[2]/div[7]/div[1]' contains exact text 'Wrap'.</msg>
+<status status="PASS" starttime="20210831 20:26:28.073" endtime="20210831 20:26:28.093"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="root"]/div/div[3]/div[1]/div[2]/div[1]/div[1]/div[2]/div[7]/div[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:08:06.455" level="INFO">Clicking element '//*[@id="root"]/div/div[3]/div[1]/div[2]/div[1]/div[1]/div[2]/div[7]/div[1]'.</msg>
-<status status="PASS" starttime="20210831 20:08:06.455" endtime="20210831 20:08:06.587"/>
+<msg timestamp="20210831 20:26:28.094" level="INFO">Clicking element '//*[@id="root"]/div/div[3]/div[1]/div[2]/div[1]/div[1]/div[2]/div[7]/div[1]'.</msg>
+<status status="PASS" starttime="20210831 20:26:28.094" endtime="20210831 20:26:28.270"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>//*[@id="root"]/div[2]/div[2]/div/div[8]/div[1]</arg>
 <arg>Confirm ${Transaction}</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20210831 20:08:06.588" level="INFO">Verifying element '//*[@id="root"]/div[2]/div[2]/div/div[8]/div[1]' contains exact text 'Confirm Wrap'.</msg>
-<status status="PASS" starttime="20210831 20:08:06.587" endtime="20210831 20:08:06.604"/>
+<msg timestamp="20210831 20:26:28.271" level="INFO">Verifying element '//*[@id="root"]/div[2]/div[2]/div/div[8]/div[1]' contains exact text 'Confirm Wrap'.</msg>
+<status status="PASS" starttime="20210831 20:26:28.271" endtime="20210831 20:26:28.313"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="root"]/div[2]/div[2]/div/div[8]/div[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:08:06.604" level="INFO">Clicking element '//*[@id="root"]/div[2]/div[2]/div/div[8]/div[1]'.</msg>
-<status status="PASS" starttime="20210831 20:08:06.604" endtime="20210831 20:08:06.739"/>
+<msg timestamp="20210831 20:26:28.313" level="INFO">Clicking element '//*[@id="root"]/div[2]/div[2]/div/div[8]/div[1]'.</msg>
+<status status="PASS" starttime="20210831 20:26:28.313" endtime="20210831 20:26:28.420"/>
 </kw>
-<status status="PASS" starttime="20210831 20:08:06.437" endtime="20210831 20:08:06.739"/>
+<status status="PASS" starttime="20210831 20:26:28.073" endtime="20210831 20:26:28.421"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210831 20:08:11.742" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20210831 20:08:06.740" endtime="20210831 20:08:11.743"/>
+<msg timestamp="20210831 20:26:33.422" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210831 20:26:28.421" endtime="20210831 20:26:33.423"/>
 </kw>
 <kw name="Switch Window" library="SeleniumLibrary">
 <arg>MetaMask Notification</arg>
 <doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" starttime="20210831 20:08:11.743" endtime="20210831 20:08:11.855"/>
+<status status="PASS" starttime="20210831 20:26:33.423" endtime="20210831 20:26:33.867"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@data-testid="page-container-footer-next"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:08:11.855" level="INFO">Clicking element '//*[@data-testid="page-container-footer-next"]'.</msg>
-<status status="PASS" starttime="20210831 20:08:11.855" endtime="20210831 20:08:11.953"/>
+<msg timestamp="20210831 20:26:33.867" level="INFO">Clicking element '//*[@data-testid="page-container-footer-next"]'.</msg>
+<status status="PASS" starttime="20210831 20:26:33.867" endtime="20210831 20:26:34.074"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210831 20:08:16.954" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20210831 20:08:11.953" endtime="20210831 20:08:16.954"/>
+<msg timestamp="20210831 20:26:39.076" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210831 20:26:34.074" endtime="20210831 20:26:39.076"/>
 </kw>
 <kw name="Close Transaction Submit Modal" library="Swap">
 <arg>WETH</arg>
 <kw name="Switch Window" library="SeleniumLibrary">
 <arg>Monoswap | MonoX</arg>
 <doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" starttime="20210831 20:08:16.955" endtime="20210831 20:08:17.024"/>
+<status status="PASS" starttime="20210831 20:26:39.077" endtime="20210831 20:26:39.123"/>
 </kw>
 <kw name="Wait Until Page Does Not Contain" library="SeleniumLibrary">
 <arg>Your Transaction Has Started</arg>
 <doc>Waits until ``text`` disappears from the current page.</doc>
-<status status="PASS" starttime="20210831 20:08:17.024" endtime="20210831 20:08:17.033"/>
+<status status="PASS" starttime="20210831 20:26:39.124" endtime="20210831 20:26:39.133"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>15s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210831 20:08:32.034" level="INFO">Slept 15 seconds</msg>
-<status status="PASS" starttime="20210831 20:08:17.033" endtime="20210831 20:08:32.034"/>
+<msg timestamp="20210831 20:26:54.135" level="INFO">Slept 15 seconds</msg>
+<status status="PASS" starttime="20210831 20:26:39.133" endtime="20210831 20:26:54.135"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Transaction Submitted</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20210831 20:08:32.044" level="INFO">Current page contains text 'Transaction Submitted'.</msg>
-<status status="PASS" starttime="20210831 20:08:32.034" endtime="20210831 20:08:32.045"/>
+<msg timestamp="20210831 20:26:54.146" level="INFO">Current page contains text 'Transaction Submitted'.</msg>
+<status status="PASS" starttime="20210831 20:26:54.135" endtime="20210831 20:26:54.146"/>
 </kw>
 <kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${URL}</var>
 <arg>//*[@id="root"]/div[2]/div[2]/div/a</arg>
 <arg>href</arg>
 <doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
-<status status="PASS" starttime="20210831 20:08:32.045" endtime="20210831 20:08:32.060"/>
+<msg timestamp="20210831 20:26:54.164" level="INFO">${URL} = https://kovan.etherscan.io/tx/0x85eb9f8192f1c223ece3044ae5d87e3714d7c6b5c31ea3fe9f17d53d7522de1c</msg>
+<status status="PASS" starttime="20210831 20:26:54.146" endtime="20210831 20:26:54.164"/>
+</kw>
+<kw name="Set Test Message" library="BuiltIn">
+<arg>${URL}</arg>
+<doc>Sets message for the current test case.</doc>
+<msg timestamp="20210831 20:26:54.165" level="INFO">Set test message to:
+https://kovan.etherscan.io/tx/0x85eb9f8192f1c223ece3044ae5d87e3714d7c6b5c31ea3fe9f17d53d7522de1c</msg>
+<status status="PASS" starttime="20210831 20:26:54.164" endtime="20210831 20:26:54.165"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>"${Token}" == "ETH"</arg>
@@ -1908,39 +1934,39 @@
 <arg>//*[@id="root"]/div[2]/div[2]/div/div[9]/div[1]</arg>
 <arg>Close</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20210831 20:08:32.062" level="INFO">Verifying element '//*[@id="root"]/div[2]/div[2]/div/div[9]/div[1]' contains exact text 'Close'.</msg>
-<status status="PASS" starttime="20210831 20:08:32.061" endtime="20210831 20:08:32.079"/>
+<msg timestamp="20210831 20:26:54.168" level="INFO">Verifying element '//*[@id="root"]/div[2]/div[2]/div/div[9]/div[1]' contains exact text 'Close'.</msg>
+<status status="PASS" starttime="20210831 20:26:54.168" endtime="20210831 20:26:54.183"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="root"]/div[2]/div[2]/div/div[9]/div[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210831 20:08:32.079" level="INFO">Clicking element '//*[@id="root"]/div[2]/div[2]/div/div[9]/div[1]'.</msg>
-<status status="PASS" starttime="20210831 20:08:32.079" endtime="20210831 20:08:32.133"/>
+<msg timestamp="20210831 20:26:54.183" level="INFO">Clicking element '//*[@id="root"]/div[2]/div[2]/div/div[9]/div[1]'.</msg>
+<status status="PASS" starttime="20210831 20:26:54.183" endtime="20210831 20:26:54.286"/>
 </kw>
-<status status="PASS" starttime="20210831 20:08:32.061" endtime="20210831 20:08:32.133"/>
+<status status="PASS" starttime="20210831 20:26:54.167" endtime="20210831 20:26:54.287"/>
 </kw>
-<status status="PASS" starttime="20210831 20:08:32.060" endtime="20210831 20:08:32.133"/>
+<status status="PASS" starttime="20210831 20:26:54.165" endtime="20210831 20:26:54.287"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>6s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210831 20:08:38.136" level="INFO">Slept 6 seconds</msg>
-<status status="PASS" starttime="20210831 20:08:32.133" endtime="20210831 20:08:38.136"/>
+<msg timestamp="20210831 20:27:00.288" level="INFO">Slept 6 seconds</msg>
+<status status="PASS" starttime="20210831 20:26:54.287" endtime="20210831 20:27:00.289"/>
 </kw>
-<status status="PASS" starttime="20210831 20:08:16.954" endtime="20210831 20:08:38.137"/>
+<status status="PASS" starttime="20210831 20:26:39.076" endtime="20210831 20:27:00.289"/>
 </kw>
-<status status="PASS" starttime="20210831 20:07:49.741" endtime="20210831 20:08:38.137"/>
+<status status="PASS" starttime="20210831 20:26:11.876" endtime="20210831 20:27:00.290"/>
 </kw>
 <kw name="Closing Browser" library="CommonFunctionalities" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20210831 20:08:38.139" endtime="20210831 20:08:38.408"/>
+<status status="PASS" starttime="20210831 20:27:00.292" endtime="20210831 20:27:00.577"/>
 </kw>
-<status status="PASS" starttime="20210831 20:08:38.138" endtime="20210831 20:08:38.408"/>
+<status status="PASS" starttime="20210831 20:27:00.291" endtime="20210831 20:27:00.578"/>
 </kw>
-<status status="PASS" starttime="20210831 20:06:48.246" endtime="20210831 20:08:38.408"/>
+<status status="PASS" starttime="20210831 20:25:06.239" endtime="20210831 20:27:00.578">https://kovan.etherscan.io/tx/0x85eb9f8192f1c223ece3044ae5d87e3714d7c6b5c31ea3fe9f17d53d7522de1c</status>
 </test>
-<status status="FAIL" starttime="20210831 20:01:50.101" endtime="20210831 20:08:38.408"/>
+<status status="FAIL" starttime="20210831 20:19:30.595" endtime="20210831 20:27:00.579"/>
 </suite>
 <statistics>
 <total>
@@ -1953,9 +1979,9 @@
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20210831 20:01:50.279" level="WARN">Imported resource file '/Users/metoinside/Documents/qntism/monox-automation/initialAutomation/Resources/PageObjects/Home.robot' is empty.</msg>
-<msg timestamp="20210831 20:01:50.286" level="WARN">Imported resource file '/Users/metoinside/Documents/qntism/monox-automation/initialAutomation/Resources/PageObjects/Farm.robot' is empty.</msg>
-<msg timestamp="20210831 20:01:50.286" level="WARN">Imported resource file '/Users/metoinside/Documents/qntism/monox-automation/initialAutomation/Resources/PageObjects/Pool.robot' is empty.</msg>
-<msg timestamp="20210831 20:01:50.286" level="WARN">Imported resource file '/Users/metoinside/Documents/qntism/monox-automation/initialAutomation/Resources/PageObjects/Future.robot' is empty.</msg>
+<msg timestamp="20210831 20:19:30.770" level="WARN">Imported resource file '/Users/metoinside/Documents/qntism/monox-automation/initialAutomation/Resources/PageObjects/Home.robot' is empty.</msg>
+<msg timestamp="20210831 20:19:30.775" level="WARN">Imported resource file '/Users/metoinside/Documents/qntism/monox-automation/initialAutomation/Resources/PageObjects/Farm.robot' is empty.</msg>
+<msg timestamp="20210831 20:19:30.776" level="WARN">Imported resource file '/Users/metoinside/Documents/qntism/monox-automation/initialAutomation/Resources/PageObjects/Pool.robot' is empty.</msg>
+<msg timestamp="20210831 20:19:30.776" level="WARN">Imported resource file '/Users/metoinside/Documents/qntism/monox-automation/initialAutomation/Resources/PageObjects/Future.robot' is empty.</msg>
 </errors>
 </robot>
